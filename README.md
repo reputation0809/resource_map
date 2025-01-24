@@ -1,1 +1,1 @@
-# resource_map_img
+# resource_map
