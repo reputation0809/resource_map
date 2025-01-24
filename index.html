@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image with Button</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="homepage" class="page">
+    <img src="https://i.postimg.cc/hP4wd9DX/image.png" alt="">
+    <a href="#" id="enterButton" class="enter-button">按此進入</a>
+  </div>
+  
+  <div id="choose_page" class="page2" style="display: none;">
+    <h1>請選擇資料來源:</h1>
+    <div class="image-container">
+      <div class="image-wrapper">
+        <img src="https://i.postimg.cc/HLnbVLJg/image.png" alt="Image 1" class="image">
+        <a href="#" id="governButton" class="scbutton">資料 1</a>
+      </div>
+      <div class="image-wrapper">
+        <img src="https://i.postimg.cc/FH7KSkxD/image.png" alt="Image 2" class="image">
+        <a href="#" id="moneyButton" class="scbutton">資料 2</a>
+      </div>
+      <div class="image-wrapper">
+        <img src="https://i.postimg.cc/4xqxQ4LZ/image.png" alt="Image 3" class="image">
+        <a href="#" id="communityButton" class="scbutton">資料 3</a>
+      </div>
+    </div>
+    <a href="#" id="backButton" class="back-button">返回</a>
+  </div>
+  
+  <div id="govern_page" class="page3" style="display: none;">
+  <h1>請選擇系統單位:</h1>
+    <div class="options">
+      <!-- 第一個選項 -->
+      <div class="option">
+        <h2>中央：衛福部長照2.0</h2>
+        <a href="#" id="careButton" target="_blank">
+          <img src="https://i.postimg.cc/FHQ0yJpb/image.png" alt="衛福部長照2.0">
+        </a>
+      </div>
+
+      <!-- 第二個選項 -->
+      <div class="option">
+        <h2>中央：輔導會</h2>
+        <a href="#" id="affairButton" target="_blank">
+          <img src="https://i.postimg.cc/vZLf3H2J/image.png" alt="輔導會">
+        </a>
+      </div>
+
+      <!-- 第三個選項 -->
+      <div class="option">
+        <h2>地方：臺東縣政府社會處</h2>
+        <a href="#" id="taitungButton" target="_blank">
+          <img src="https://i.postimg.cc/hGrQBRjQ/image.jpg" alt="臺東縣政府社會處">
+        </a>
+      </div>
+      </div>
+    <a href="#" id="backButton_page3" class="back-button">返回</a>
+    </div>
+  
+  <div id="money_page" class="page4" style="display: none;">
+  <!-- 頁首 -->
+    <header class="header_money">
+      <h1 class="title_money">
+        <a>請選擇財團法人</a>
+      </h1>
+    </header>
+
+    <!-- 內容 -->
+    <div class="content_money">
+      <div class="section_money">
+        <a href="https://www.wheat.org.tw/" target="_blank">1. 一粒麥子</a>
+        <p>老人送餐、老障關懷、弱勢生活扶助、偏鄉日照建置</p>
+      </div>
+      <div class="section_money">
+        <a href="https://www.avs.org.tw/" target="_blank">2. 犯罪者被害人保護協會</a>
+        <p>訴訟協助、被害補償、諮商輔導</p>
+      </div>
+      <div class="section_money">
+        <a href="https://www.eden.org.tw/" target="_blank">3. 伊甸基金會</a>
+        <p>早療服務、弱勢兒少、失能家庭、長照服務</p>
+      </div>
+      <div class="section_money">
+        <a href="https://www.chaca.org.tw/Default.aspx" target="_blank">4. 中華安德烈慈善協會</a>
+        <p>中低收、食物銀行、培鷹計畫、安心計畫、善果計畫</p>
+      </div>
+      <div class="section_money">
+        <a href="https://www.kidsalive.org.tw/" target="_blank">5. 阿尼色弗兒童之家</a>
+        <p>6-18歲貧孤、單親、變故、失依兒童</p>
+      </div>
+      <div class="section_money">
+        <a href="https://www.vndf.org.tw/" target="_blank">6. 榮民榮眷基金會</a>
+        <p>災害救助、教育補助、菁英圓夢獎學金</p>
+      </div>
+      <div class="section_money">
+        <a href="http://www.star.org.tw/about4.html" target="_blank">7. 救星教養院</a>
+        <p>18歲以上智能障礙、多重障礙、極度仰賴他人照護者</p>
+      </div>
+      <div class="section_money">
+        <a href="https://www.genesis.org.tw/" target="_blank">8. 創世基金會</a>
+        <p>植物人、三失老人、街友、社會邊緣人</p>
+      </div>
+      <div class="section_money">
+        <a href="https://www.elder.org.tw/" target="_blank">9. 華山基金會</a>
+        <p>三失長輩、百歲人瑞</p>
+      </div>
+      <div class="section_money">
+        <a href="https://www.goh.org.tw/taitung-branch-office/" target="_blank">10. 勵馨基金會台東分所</a>
+        <p>家庭暴力被害人服務、性暴力防治、兒少庇護安置</p>
+      </div>
+      <div class="section_money">
+        <a href="https://charity.tzuchi.org.tw/" target="_blank">11. 佛教慈濟基金會</a>
+        <p>弱勢扶助、社會慈善、災害救助、社會公益</p>
+      </div>
+    </div>
+    <a href="#" id="backButton_page4" class="back-button">返回</a>
+  </div>
+  
+  <div id="community_page" class="page5" style="display: none;">
+    
+    <header class="header_money">
+      <h1 class="title_money">
+        <a>請選擇社褔團體</a>
+      </h1>
+    </header>
+    
+  <div class="content_money">
+      <div class="section_money">
+        <a href="http://www.tcfsa.org.tw/index.php/component/content/category/8-2013-04-09-08-57-10" target="_blank">1. 外籍配偶協會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.facebook.com/p/%E5%8F%B0%E6%9D%B1%E7%B8%A3%E5%AE%B6%E5%BA%AD%E7%85%A7%E9%A1%A7%E8%80%85%E9%97%9C%E6%87%B7%E5%8D%94%E6%9C%83-100085333342270/?paipv=0&eav=Afbq5HwN_WYFOc5IMwBfWfMhSiZBTskbFfUVnCO-5Ec7effwcD67X9h5g6EKgUpowwM&_rdr" target="_blank">2.家庭照顧者關懷協會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="http://www.siat.org.tw/branch02.php?ID=97&classID=&daterange=&searchTXT=&go_page=" target="_blank">3.臺東縣蘭馨國際交流協會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://lotus-heart.eoffering.org.tw/" target="_blank">4.中華心蓮心公益協會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.facebook.com/p/%E5%8F%B0%E6%9D%B1%E7%B8%A3%E5%8D%91%E5%8D%97%E9%84%89%E5%8E%9F%E4%BD%8F%E6%B0%91%E6%97%8F%E5%AE%B6%E5%BA%AD%E6%9C%8D%E5%8B%99%E4%B8%AD%E5%BF%83-100067687425355/?paipv=0&eav=AfYIvcd0iBdqswOTfNFpdVHZiiQEh9tgUyihcsuQbPX06p-Dx6EDg_znQsG5OCgRrtE&_rdr" target="_blank">5.卑南鄉原住民族家庭服務中心</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.ht.org.tw/" target="_blank">6.台北行天宮</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.buddha-charity.org/main.php?funName=news" target="_blank">7.中華佛教善緣慈善會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.kiwanis.org.tw/club/index.html?ID=taitungcity" target="_blank">8.台東市國際同濟會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.facebook.com/p/%E5%8F%B0%E6%9D%B1%E7%A5%9E%E8%BE%B2%E5%AE%AE-100064439242317/?locale=en_GB&paipv=0&eav=AfYXFiWt4ojXn9WExL2g4uXlNZnC97MtyZkYQNTyU_CLGyvsNmVSQE1LkNbgTFqglE4&_rdr" target="_blank">9.神農宮管理委員會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="http://life1995.org.tw/?aid=301&pid=0&page_name=detail&iid=98" target="_blank">10.國際生命線協會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.facebook.com/profile.php?id=100064372882288&locale=zh_TW" target="_blank">11.身心障礙者保護協會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.pxmart.org.tw/" target="_blank">12.全聯慶祥慈善基金會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://www.taitungredcross.org.tw/" target="_blank">13.台東縣紅十字會</a>
+      </div>
+    
+    <div class="section_money">
+        <a href="https://i-two.com.tw/zh/index-tw/" target="_blank">14.宣霖創藝股份有限公司</a>
+      </div>
+  </div>
+    <a href="#" id="backButton_page5" class="back-button">返回</a>
+    </div>
+  
+  <div id="care_page" class="page3_1" style="display: none;">
+  <div class="container">
+     <div class="service-select-container">
+      <a href="https://1966.gov.tw/LTC/mp-207.html" id="serviceSelectButton" target="_blank">
+        <img src="https://i.postimg.cc/tgQgYL32/2-0.png" alt="長照2.0" class="service-select">
+      </a>
+    </div>
+    <div class="options">
+      <!-- 第一個選項 -->
+      <div class="option">
+        <a href="https://1966.gov.tw/LTC/cp-6451-69935-207.html" id="takecareButton" target="_blank">
+          <img src="https://i.postimg.cc/DzZ2NnPj/image.png" alt="照顧服務">
+        </a>
+      </div>
+
+      <!-- 第二個選項 -->
+      <div class="option">
+        <a href="https://1966.gov.tw/LTC/cp-6452-69937-207.html" id="trafficButton" target="_blank">
+          <img src="https://i.postimg.cc/gjvdhJGJ/image.png" alt="交通接送">
+        </a>
+      </div>
+
+      <!-- 第三個選項 -->
+      <div class="option">
+        <a href="https://1966.gov.tw/LTC/cp-6453-69940-207.html" id="toolButton" target="_blank">
+          <img src="https://i.postimg.cc/j5frV5wX/image.png" alt="輔具租購">
+        </a>
+      </div>
+
+      <!-- 第四個選項 -->
+      <div class="option">
+        <a href="https://1966.gov.tw/LTC/lp-6458-207.html" id="hospitalButton" target="_blank">
+          <img src="https://i.postimg.cc/02JS4MnV/image.png" alt="醫療銜接">
+        </a>
+      </div>
+
+      <!-- 第五個選項 -->
+      <div class="option">
+        <a href="https://1966.gov.tw/LTC/cp-6457-69925-207.html" id="homeButton" target="_blank">
+          <img src="https://i.postimg.cc/HkDM1YPd/image.png" alt="住宿服務">
+        </a>
+      </div>
+
+      <!-- 第六個選項 -->
+      <div class="option">
+        <a href="https://1966.gov.tw/LTC/cp-6454-70075-207.html" id="breathButton" target="_blank">
+          <img src="https://i.postimg.cc/mD5cXBHx/image.png" alt="喘息服務">
+        </a>
+      </div>
+    </div>
+
+    <!-- 長照專線圖片 -->
+    <div class="support-line">
+      <img src="https://i.postimg.cc/Nfh8Bk53/image.png" alt="長照專線">
+    </div>
+
+    <!-- 返回按鈕 -->
+    <a href="#" id="backButton_page3_1" class="back-button">返回</a>
+  </div>
+</div>
+  
+<div id="county_page" class="page3_3" style="display: none;">  
+  <!-- 頁首圖片 -->
+    <div class="header">
+      <img src="https://i.postimg.cc/hGrQBRjQ/image.jpg" alt="縣政府社會處">
+    </div>
+    
+    <!-- 標題 -->
+    <h1 class="title">
+     <a href="https://taisoc.taitung.gov.tw/WebSite/Page/index.aspx" target="_blank">縣政府社會處</a>
+  </h1>
+  
+      <!-- 內容區域 -->
+    <div class="content">
+      <div class="section">
+        <a href="https://taisoc.taitung.gov.tw/WebSite/Service/serviceDetail.aspx?menuid=lW%2bfKiAxClc%3d&page=1&id=fwh51UVToU0%3d" target="_blank">1. 身心障礙証明</a>
+        <p>停車証、輔具、居家照顧、住宿照顧、經濟補助、醫療補助、租金補貼、車位補貼</p>
+      </div>
+      <div class="section">
+        <a href="https://taisoc.taitung.gov.tw/WebSite/Service/serviceDetail.aspx?menuid=lW%2bfKiAxClc%3d&page=1&id=ZJqHdEXzlRQ%3d" target="_blank">2. 百歲人瑞營養補助</a>
+        <p>年滿100歲人瑞，無公費安置於公私立安養機構考(含榮家)</p>
+      </div>
+      <div class="section">
+        <a href="https://taisoc.taitung.gov.tw/WebSite/Service/servicelist.aspx?menuid=lW%2bfKiAxClc%3d&cate=0zGMn1bvUYg%3d&listall=1" target="_blank">3. 低（中低）收入戶救助</a>
+        <p>老人生活津貼、重病住院費用補助、產婦嬰兒營養、傷病醫療、房屋修繕</p>
+      </div>
+      <div class="section">
+        <a href="https://taisoc.taitung.gov.tw/WebSite/Service/serviceDetail.aspx?menuid=lW%2bfKiAxClc%3d&page=1&id=cwKrUeIfktA%3d" target="_blank">4. 急難救助</a>
+        <p>主要生計者意外、重病、失業、失蹤、服役、入獄、羈押、拘禁致家庭陷於困境。</p>
+        <p>財產強制執行、凍結或其他原因無法運用致生活陷於困境；或戶內人口死亡無力殮葬。</p>
+      </div>
+      <div class="section">
+        <a href="https://taisoc.taitung.gov.tw/WebSite/Service/serviceDetail.aspx?menuid=lW%2bfKiAxClc%3d&page=1&id=o3zxgatLvj0%3d" target="_blank">5. 災害救助</a>
+        <p>因天災致損害重大，影響生活者。</p>
+      </div>
+      <div class="section">
+        <a href="https://taisoc.taitung.gov.tw/WebSite/Service/servicelist.aspx?menuid=lW%2bfKiAxClc%3d&cate=NkBp1!0!tkkbk%3d&listall=1" target="_blank">6. 兒童及少年弱勢扶助</a>
+        <p>中低收、弱勢家庭、特殊境遇、家庭變故、父母離異。</p>
+      </div>
+      <a href="#" id="backButton_page3_3" class="back-button">返回</a>
+    </div>
+  
+  </div>  
+    
+   <div id="affair_homepage" class="page_affair" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header>
+            <h1 class="affair_homepage_title">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_affair_homepage_image">
+            </a>
+            </h1>
+          </header>
+          
+          <!-- 榮民部分 -->
+          <section class="section_affair_homepage">
+            <h2 class="section_affair_homepage_title">榮民</h2>
+            <ul class="link-list">
+              <li><a href="#" id="honor_identity" target="_blank">申辦證件</a></li>
+              <li><a href="#" id="care" target="_blank">溫馨服務照顧</a></li>
+              <li><a href="#" id="home" target="_blank">安居就養</a></li>
+              <li><a href="#" id="medical" target="_blank">安心就醫</a></li>
+              <li><a href="#" id="train" target="_blank">職訓逐夢</a></li>
+              <li><a href="#" id="job" target="_blank">就業情報</a></li>
+              <li><a href="#" id="study" target="_blank">快樂就學</a></li>
+              <li><a href="#" id="retire_money" target="_blank">退休俸退除給付</a></li>
+            </ul>
+          </section>
+          <!-- 遺眷部分 -->
+          <section class="section">
+            <h2 class="section_affair_homepage_title">遺眷</h2>
+            <section class="study_content">
+            <table class="study_info_table">
+              <tbody>
+                <tr>
+                  <td>資格</td>
+                  <td>
+                  一、稱「遺眷」指現居住於臺灣地區亡故榮民（第一類退除役官兵）之配偶、父母與未成
+年之子女，及已成年未婚之身心障礙子女。<br>
+                   二、戰訓或因公殞命軍人之遺族，準用遺眷規定。
+                  </td>
+                </tr>
+                <tr>
+                  <td>服務事項</td>
+                  <td>
+<!--                     <ul> -->
+                      <a href="#" id="identity" target="_blank">一、遺眷代表證</a>
+                      <a href="#" id="funeral" target="_blank">二、公費就養榮民亡故（含大陸探親、長居死亡就養榮民）遺眷喪葬補助費</a>
+                      <a href="#" id="crucial" target="_blank">三、公費就養榮民遺眷重點救助金</a>
+                      <a href="#" id="imergency" target="_blank">四、急難救助</a>
+                      <a href="#" id="season" target="_blank">五、三節慰問</a>
+                      <a href="#" id="funeral_care" target="_blank">六、喪葬慰問金</a></li>
+                      <a href="#" id="school" target="_blank">七、榮民子女就學補助</a></li>
+                      <a href="#" id="lunch" target="_blank">八、午餐補助</a><br>
+                      九、榮民亡故得申請「旌忠狀」及安厝「軍人忠靈祠、塔（殿）」（軍人忠靈祠請向縣市政
+府申辦，旌忠狀、忠靈塔【殿】請向地區後備指揮部申請）<br>
+                      十、法律諮詢服務：凡榮民(眷)遭遇權益問題，可向各榮民服務處申請法律諮詢服務。<br>
+                      <a href="#" id="dependent_foundation" target="_blank">十一、財團法人榮民榮眷基金會</a>
+                      <a href="#" id="medical_care" target="_blank">十二、申請榮家安養、失能(養護、失智)照顧</a>
+                      <a href="#" id="dependent_work_train" target="_blank">十三、推介就業、職業訓練</a>
+                      <a href="#" id="dependent_other" target="_blank">十四、提供榮民遺眷家戶代表(領有榮民遺眷家戶代表證者)健保費及就醫補助</a>
+<!--                       </ul> -->
+                  </td>
+                  </tr>
+              </tbody>
+            </table>
+          </section>
+          <h2 class="section_affair_homepage_title">公用表下載區</h2>
+<!--           <a href="" target="_blank">榮民(第一類退除役官兵)權益簡表</a> -->
+          <a href="https://drive.google.com/uc?export=download&id=1Yd5pVQmjrEgZpPfJPcWIoAXQ7f3Am2DF" download>榮民(第一類退除役官兵)權益簡表</a>
+          <a href="https://drive.google.com/your-file-link" target="_blank">榮民遺眷權益簡表</a>
+          <a href="https://drive.google.com/your-file-link" target="_blank">112年初申請公費安養應備資料一覽(白色)</a>
+          <a href="https://drive.google.com/your-file-link" target="_blank">1101229台東縣榮服處就醫服務項目表(紅色)</a>
+          <a href="https://drive.google.com/your-file-link" target="_blank">就學就業處(黃色)</a>
+          <a href="https://drive.google.com/your-file-link" target="_blank">臺東縣榮民服務處善後服務表113.10.01(藍色)</a>
+          <a href="https://drive.google.com/your-file-link" target="_blank">臺東縣榮民服務處善後服務表114.01.01(藍色)</a>
+
+<!--             <ul class="link-list">
+              <li><a href="#" id="identity" target="_blank">遺眷代表證</a></li>
+              <li><a href="#" id="funeral" target="_blank">喪葬補助</a></li>
+              <li><a href="#" id="imergency" target="_blank">急難救助</a></li>
+              <li><a href="#" id="school" target="_blank">就學補助</a></li>
+              <li><a href="#" id="medical_care" target="_blank">就醫就養</a></li>
+              <li><a href="#" id="dependent_other" target="_blank">其他</a></li>
+            </ul> -->
+          </section>
+     <a href="#" id="backButton_affair_homepage" class="back-button">返回</a>
+        </div>
+        
+    <div id="honor_identity_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">申辦證件</h1>
+            <img src="https://i.postimg.cc/SRsGMbJ1/study.png" alt="就學" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>申請榮民證</td>
+                  <td>申請資格
+        <ol>
+            <li>志願服現役滿 10 年以上，依法退伍除役之軍士官兵。</li>
+            <li>於 79 年 2 月 9 日前入營服志願役軍（士）官、於 94 年 8 月 9 日前入營之志願役士兵，經國防部證實現役年資符合當時規定者。</li>
+            <li>因作戰或因公致病、傷或身心障礙而失去工作能力，於退伍除役後，生計艱難需長期醫療或就養，其傷殘經鑑定合格者。</li>
+            <li>曾參加民國 47 年八二三臺海保衛戰役之軍士官兵（含金門馬祖民防自衛隊）及其他經國防部核定之關係國家安全之重要戰役，經國防部核認有案者。</li>
+        </ol>
+        <p class="note">附記：退除役官兵有國軍退除役官兵輔導條例第 32 條各項所定之情形者，停止榮民權益。</p>
+
+        
+            檢附文件需
+            <ol>
+                <li>檢附國民身分證（或附有照片之全民健康保險卡）正本。</li>
+                <li>最近三個月內一吋脫帽半身照片數位檔（無數位檔照片者，需提供實體照片一張或親至榮服處現場拍攝）。</li>
+                <li>申請表（可至本會官網下載列印或由榮服處提供）。</li>
+                <li>委託代辦者：申請人附委託書、受委託人身分證正本。</li>
+            </ol>
+            <p class="note">
+                附記：<br>
+                1. 身分證請提供正本，由榮服處查驗影印後發還。<br>
+                2. 本會資料庫已建置資料之新進退除役官兵可免申請表。
+            </p>
+        </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_honor_identity_page" class="back-button">返回</a>
+      </div> 
+  
+    <div id="home_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">安居就養</h1>
+            <img src="https://i.postimg.cc/SRdv0bPm/care.png" alt="就學" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>公費安養</td>
+                  <td>榮民服役期間因戰(公)傷殘、且無固定職業，或榮民年滿61歲且無固定職業，且全戶所得低於一定標準，經核定就養者，每月可領取就養給付1萬4,874元，並得依意願公費進住榮家。</td>
+                </tr>
+                <tr>
+                  <td>自費安養</td>
+                  <td>未公費就養之榮民，榮民之無固定職業之父母及配偶，得自付服務費(安養每月6,000元，養護每月6,800元)，至榮家安養或養護。</td>
+                </tr>
+                <tr>
+                  <td>申請進住榮家</td>
+                  <td>凡具有榮民身分且符合進住(或併同安置)條件者，得檢具相關資料向各榮家、戶籍所在地或居住地之榮民服務處提出申請。</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_home_page" class="back-button">返回</a>
+      </div>
+  
+    <div id="study_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">快樂就學</h1>
+            <img src="https://i.postimg.cc/SRsGMbJ1/study.png" alt="就學" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>入學加分優待</td>
+                  <td>退伍軍人報考高中以上學校，其入學或轉學考試成績依「退伍軍人報考高級中等以上學校優待辦法」給予加分優待。（博士班、碩士班、學士後各學系、回流教育中之進修學士班、在職專班除外）。</td>
+                </tr>
+                <tr>
+                  <td>推甄就讀大專校院</td>
+                  <td>本會與國立臺北商業大學等多所大專校院合作，每年於4至6月辦理二專、二技、四技／大學推甄入學作業，輔導退除役官兵順利就讀大專校院。<br>
+                    <ol>
+                      <li>推甄二專：110年本會辦理推甄二專進修部，計有國立臺中科技大學等8校。</li>
+                      <li>推甄二技：110年本會辦理推甄二技進修部，計有國立臺北商業大學等26校。</li>
+                      <li>推甄四技/大學：110年本會辦理推甄四年制進修部、在職專班暨進修學士班，計有國立臺北大學等46校。</li>
+                      </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>就學補助生活津貼及獎勵</td>
+                  <td>為激勵、獎勵退除役官兵繼續就學深造，凡就讀國內具有正式學籍之大專校院及研究所或出國就讀研究所攻讀碩、博士者，提供學雜費補助每學期20,000~80,000元/每學期；成績優異獎勵擇優每學期10,000元(名額400人)。 另為使經濟弱勢之退除役官兵再就學者，於就學期間減輕其經濟壓力，申請本會就學補助且具中低(低)收入戶資格者，就學期間按月核發就學生活津貼5,900元。俾以認真向學，充實專業知能，提升就業競爭力，以順利就業。</td>
+                </tr>
+                <tr>
+                  <td>大專校院進修補助</td>
+                  <td>校級以下退除役官兵參加國內大專校院推廣教育、學分班、空中大學（專校）函授班，可向各地榮民服務處申請學雜費補助，每人補助總金額以12萬元為上限，加強輔助對象補助總金額以16萬元為上限，以補助12次為限，每年限申請3次。</td>
+                </tr>
+                <tr>
+                  <td>就業考試進修補助</td>
+                  <td>校級以下退除役官兵參加政府立案補習班補習，且實際報名參加考試院辦理之國家考試及國(公)營事業機構進用考試，其補習課程、購買教材及考試用書等費用可向各地榮民服務處申請補助。補助總金額以5萬元為上限。補助次數以4次為限，每年限申請1次。</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_study_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="job_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">就業情報</h1>
+            <img src="https://i.postimg.cc/brjjW1qz/job.png" alt="就業" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>轉任公職考試</td>
+                  <td>本會為配合退除役官兵轉任公職需要，自民國47年起洽請考試院舉辦退除役軍人轉任公務人員特種考試，92年起舉辦國軍上校以上軍官轉任公務人員考試，以增進退除役官兵就業機會。<br>註：本考試之退除役軍人，係指具退除役官兵身分，且領有榮譽國民證者。另自105年4月起，現役軍人服役十年以上、或因作戰或因公致病、傷或身心障礙經核定有案者，退前2個月得應本項考試。</td>
+                </tr>
+                <tr>
+                  <td>會內及轉投資事業機構就業</td>
+                  <td>本會所屬農林機構（如清境農場、武陵農場、福壽山農場．．．）任用新進人員時，條件相等而為退除役官兵者優先錄用。本會轉投資事業機構（如欣欣客運公司．．．）遇有職工出缺甄試時，條件相當而為退除役官兵者亦優先進用。<br>註：本會為安置退除役官兵順利轉業，創設農、林、工業等事業機構或投資民營企業，惟近年來配合政府民營化政策，創設機構就業機會逐年漸少，輔導退除役官兵就業工作轉為推介至一般民間企業就業為主。</td>
+                </tr>
+                <tr>
+                  <td>促進退除役官兵穩定就業津貼</td>
+                  <td>為激勵退除役官兵就業意願，培養專業技能，促進長期就業，發給「職業訓練訓後就業穩定津貼」(以下簡稱訓後就業穩定津貼)及「推介就業穩定津貼」，以協助退除役官兵重返職場，穩定就業，安定生活。<br>      
+            <ol>
+              <li>訓後就業穩定津貼：退除役官兵參加全日制職業訓練班隊，結訓次日起4個月內就業、且連續就業滿3個月以上者，發給訓後就業穩定津貼，榮民前半年每月1萬2千元，後半年每月8千元；第二類退除役官兵前半年每月6千元，後半年每月4千元。</li>
+              <li>推介就業穩定津貼：退除役官兵失業期間連續達1個月以上或屬非自願離職、經輔導會推介就業、且連續就業滿3個月者；或於服役期滿次日起1個月內之新退官兵、經輔導會推介就業、且連續就業滿3個月者，發給推介就業穩定津貼，榮民每月8千元；第二類退除役官兵每月4千元。</li>
+              <li>前兩項津貼合併計發以12個月為限。</li>
+            </ol>
+                </tr>
+                <tr>
+                  <td>創業諮詢輔導</td>
+                  <td>為協助退除役官兵降低創業風險，提高創業成功機率，委由專業機構，安排顧問輔導有創業需求者撰寫貸款計畫書，協助已創業者適時導入政府資源，申辦創業貸款利息補貼，促進事業穩定發展。透過創業知能課程、研習活動、講座等方式，協助個案了解創業風險、充實營銷財管等知能。
+</td>
+                </tr>
+                <tr>
+                  <td>外介就業</td>
+                  <td>輔導會為協助退除役官兵順利就業、重返職場，積極與各區域內企業、工商團體建立良好的互動關係、拓展就業管道，並結合各地區既有就業服務資源，以期推介榮民(眷)及第二類退除役官兵成為企業的好幫手。 另與專業機構合作，提供職業適性評量、職涯諮詢、職涯講座及就業媒合等服務，並逐一針對個案需求，協助輔導順利就業，期退除役官兵能繼續貢獻經驗、智慧、心力，以服務社會、報效國家。
+</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_job_page" class="back-button">返回</a>
+      </div> 
+  
+  <div id="train_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">職訓逐夢</h1>
+            <img src="https://i.postimg.cc/KvMMn2HB/train.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>產訓合作</td>
+                  <td>配合產業趨勢及企業用人需求，與用人企業共同進行招募並規劃訓練內容，包含專業技能及實務訓練課程，結訓後直接由企業進用。</td>
+                </tr>
+                <tr>
+                  <td>自辦訓練</td>
+                  <td>本會設退除役官兵職業訓練中心1所，辦理退除役官兵職業訓練、技能檢定及就業輔導等工作。職訓中心擁有現代化的教學設備與場地，並建置完善的規劃、設計、執行、查核、成果評估管理系統，教學品質通過TTQS金牌認證及國家人才發展獎，為全國頗負盛名的職訓機構。職訓中心目前開設餐飲、資訊、精密機械、物業管理、機械修護、能源、創意設計及觀光休閒等八大職類訓練課程，並廣邀具有實務經驗的業界名師授課，協助學員習得一技之長，結訓學員在職場的表現廣獲好評，歡迎退除役官兵報名參訓。</td>
+                </tr>
+                <tr>
+                  <td>委外訓練</td>
+                  <td>提供嫻熟技能與培育第二專長，兼收有業與無業者為訓練對象，並結合地區產業特色、用人職缺及退除役官兵需求規劃辦理各職類課程，以培養就業技能及促進就業為主。</td>
+                </tr>
+                <tr>
+                  <td>職業訓練補助</td>
+                  <td>
+                    <ol>
+                      <li>職訓補助以輔導就業為目的，凡參加中央及地方政府各級機關、行政院捐助成立之財團法人、持有勞動部人才發展品質管理系統(TTQS)訓練機構版有效證書之職訓機構所辦訓練及勞動部技術士技能檢定職類各項訓練，以補助訓練費用方式，開放自行參訓。參訓前須先經所在地榮服處核准，完成訓練後4個月內就業，向原核准參加訓練的榮服處申請。</li>
+                      <li>補助金額：(限輔導期限內之退除役官兵)
+                      <ol><li>第一類退除役官兵：總金額新臺幣12萬元。</li><li>第二類退除役官兵：總金額新臺幣8萬
+元。 首次申請補助的金額超過前述總金額，得予全額補助。
+</li></ol></li>
+                      </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_train_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="medical_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">安心就醫</h1>
+            <img src="https://i.postimg.cc/kXq2tbW3/medical.png" alt="就醫" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>國軍醫院就醫優惠</td>
+                  <td>榮民(無論有無職業)至國軍醫院就醫免掛號費。</td>
+                </tr>
+                <tr>
+                  <td>健保保費補助</td>
+                  <td>無職業榮民參加全民健保，本會提供「一般保險費」每人每月1,377元的全額補助；隨之依附投保的無職業榮民眷屬，亦享有70%的補助(每人每月964元)。</td>
+                </tr>
+                <tr>
+                  <td>健保部分負擔<br>自付額補助</td>
+                  <td>無職業榮民在健保特約醫院看病，其「健保部分負擔自付額」由本會全額補助。有職業榮民如果在本會所屬醫療機構看病，上校級補助20%；中、少校級補助50%；尉級補助70%；士官及士兵級補助100%。</td>
+                </tr>
+                <tr>
+                  <td>掛號費補助</td>
+                  <td>榮民(無論有無職業)至本會所屬醫療機構就診，免繳掛號費。</td>
+                </tr>
+                <tr>
+                  <td>住院補助</td>
+                  <td>公費就養榮民至輔導會所屬醫療機構住院伙食費差額由輔導會補助。(頭等伙需自付差額)；持"福"字健保卡低收入戶之榮民及遺眷家戶代表至輔導會所屬醫療機構就醫，其住院榮總2人病房差額費比照無職業榮民(持"榮"字健保卡)辦理，由輔導會補助。</td>
+                </tr>
+                <tr>
+                  <td>輔具補助</td>
+                  <td>榮民因為生活輔助需要，符合申請資格者，可就近向本會各縣市榮民服務處或榮譽國民之家申請輪椅、助聽器、眼鏡、義眼．．．等輔具及鑲牙的補助。
+</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_medical_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="care_page2" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">溫馨服務照顧</h1>
+            <img src="https://i.postimg.cc/65T06Z2r/others.png" alt="就養" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>高中職以下榮民子女就學補助</td>
+                  <td>榮民之30歲以下子女，就讀高中職以下學校符合申請資格者，得申請就學補助。就讀五專前三年、高中、高職每學期補助3,800元；就讀國中、國小每學期補助500
+元。</td></tr>
+                  <tr><td>大學以上子女就學補助</td>
+                  <td>榮民之30歲以下子女，就讀大學及研究所符合申請資格者，得申請就學補助，每學期補助金為公立大學8,000元、私立大學1萬元。</td></tr>
+                  <tr><td>榮民子女午餐補助</td>
+                  <td>就讀國中、國小之榮民或榮民遺眷子女，符合低收入戶、中低收入戶、因家庭突發因素無力支付午餐費或經學校認定清寒無力支付午餐費，並納入午餐補助，或有特殊事由經本會評估核認者等條件者，得申請例假日及寒暑假午餐補助金，每日以80
+元計。</td></tr>
+                  <tr><td>榮民子女獎學金</td>
+                  <td>符合榮民榮眷基金會獎學資格之榮民子女，就讀國內大學校院及研究所博、碩士班，核發博、碩士生1萬5千元，大學生1萬2,000元獎學金；就讀國外高中、大學及研究所，符合國外求學菁英圓夢計畫獎學資格者，給予40~50萬元一次性獎學補助。</td></tr>
+                  <tr><td>周祖孝文教基金會獎學金</td>
+                  <td>榮民之子女，就讀國內高中職及大學校院，符合周祖孝文教基金會獎學資格者，核發獎學金：大學生1萬元，高中職生6,000元。</td></tr>
+                  <tr><td>急難救助與慰問</td>
+                  <td>榮民（眷）遇有急難重病或特殊災害時，可向本會或榮民服務處申請急難救助金。另本會於三節依榮民及遺眷生活貧困程度類別優先順序發放慰問金。</td></tr>
+                  <tr><td>法律諮詢服務</td>
+                  <td>榮民(眷)遭遇權益問題，可向各縣市榮民服務處申請法律諮詢服務。</td></tr>
+                  <tr><td>微型保險</td>
+                  <td>榮民具低收、中低收入戶、領取中低收入老人生活津貼或特殊境遇家庭資格，且年齡為75歲以下者，由本會協助投保意外傷害事故保險，俾於遭逢非疾病意外事故致身亡或失能時能獲得基本保險保障(最高理賠30萬元)。</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_care_page2" class="back-button">返回</a>
+      </div>
+  
+  <div id="retire_money_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">退休俸退除給付</h1>
+            <img src="https://i.postimg.cc/65T06Z2r/others.png" alt="就醫" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+              <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>子女教育補助費</td>
+                  <td>支領退休俸、贍養金或生活補助費中校階(含)以下人員，子女在臺灣地區居住，就讀政府立案之公(私)立大專以下，小學以上學校肄業正式生，得申請子女教育補助費。</td>
+                </tr>
+                <tr>
+                  <td>遺屬改支</td>
+                  <td>領俸人亡故，遺族可請領改支下列給付：
+                  <ol>
+                    <li>遺屬年金：<br>
+                    遺族為配偶、父母、未成年子女或已成年因重度身心障礙而無工作能力之子女可改支遺屬年金。</li>
+                    <li>遺屬一次金：<br>
+                    不符申請遺屬年金之遺族，僅能依優先順序共同領受一次金。</li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td>領取退除給與</td>
+                  <td>退除役官兵領取各項退除給與依國防部核定函發放，新退官兵於退伍日發放、定期俸金每月1日發放、年慰金於春節前十日發放。</td>
+                </tr>
+                <tr>
+                  <td>製發備除役軍人眷屬證</td>
+                  <td>依法退伍支領退休俸、贍養金或生活補助費人員在臺灣地區設有戶籍之父母、配偶及子女(未成年或未婚成年就讀大學或未婚(含離婚)身心障礙者)，持有備除役軍人眷屬證者可享有用水、用電優待(僅限申辦一戶)、各榮民總(分)院、軍醫院及門診中心就醫優待(部份掛號費優惠)及國軍英雄館住宿優待。</td>
+                </tr>
+                <tr>
+                  <td>水電優待申辦</td>
+                  <td>支領軍職退休俸、贍養金及生活補助費之退除役官兵本人或領有備除役軍人眷屬證之眷屬（配偶、父母、未成年之未婚子女、就讀國內大學以下學校之已成年未婚子女或持有身心障礙證明文件之未婚(含已離婚)子女），可擇一個供水（電）戶優待。</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_retire_money_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="identity_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">榮民遺眷家戶代表證</h1>
+            <img src="https://i.postimg.cc/jjXcSYT9/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明</td>
+                  <td>
+<!--                     亡故榮民之無職業且不具榮民身分之遺眷可擇一申領：
+                  <ol>
+                    <li>亡故榮民之配偶且未再婚者。</li>
+                    <li>亡故榮民之直系血親尊親屬。</li>
+                    <li>亡故榮民之未滿20歲未婚子女、或未滿25歲就讀國內大學以下之未婚子女。</li>
+                    <li>亡故榮民之持有中度以上身心障礙證明之未婚子女。</li>
+                  </ol> -->
+                    （一）申辦對象：具中華民國國籍之亡故榮民，其無職業且未具榮民身分之下列榮民遺眷擇一申領之：
+                    <ol>
+                      <li>亡故榮民之配偶，且未再婚者。</li>
+                      <li>亡故榮民之直系血親尊親屬。</li>
+                      <li>亡故榮民之未滿 20 歲未婚子女或未滿 25 歲且就讀國內大學（含）以下學校之未婚子女。</li>
+                      <li>亡故榮民之持有中度以上身心障礙證明之未婚子女。</li>
+                      </ol>
+                    附記：下列情形之人得準用榮民遺眷規定，申請榮民遺眷家戶代表證：
+                    <ol>
+                      <li>戰訓或因公殞命軍人之遺族。</li>
+                      <li>領有義士證者之遺眷。</li>
+                      </ol>
+                    （二）檢附文件：
+                    <ol>
+                      <li>申請表及無職業切結書（由榮民服務處提供）。</li>
+                      <li>政府機關發給貼有相片之身分證明文件。</li>
+                      <li>親屬關係證明文件。但核發機關得連結內政部戶役政資訊系統查詢列印者，免附。</li>
+                      <li>榮民遺眷申請日前 3 個月脫帽照片。</li>
+                      <li>其他相關證明文件（如大學以下就學在學證明、身心障礙證明等）。</li>
+                      </ol>
+                    （三）申辦榮民遺眷家戶代表證，亦可至本會全球資訊網之「便民服務線上申辦及查詢」專區，採線上申辦方式辦理（網址 http://www.vac.gov.tw/cp-2510-7946-1.html）。<br>
+                    附記：
+                    <ol>
+                      <li>初次申請榮民遺眷家戶代表證之遺眷，應持證至戶籍所在地鄉、鎮、市、區公所辦理第六類第一目健保投保事宜。</li>
+                      <li>國軍遺族依其意願選擇投保機關（國防部）。</li>
+                      </ol>
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>遺眷申請半俸改支餘額退伍金
+</td>
+                  <td>軍官、士官於領受退休俸或贍養金期間死亡，遺族得依陸海空軍軍官士官服役條例第37條相關規定辦理遺屬一次金或遺屬年金。</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_identity_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="funeral_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">遺眷_喪葬補助</h1>
+            <img src="https://i.postimg.cc/4ybVBz30/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明
+</td>
+                  <td>
+                    （一）發放標準：最高不得逾新臺幣 4 萬元。<br>
+                    （二）承辦單位：
+                    <ol>
+                      <li>就養內住之榮民－各榮家。</li>
+                      <li>就養外住之榮民－各榮民服務處。</li>
+                    </ol>
+                    （三）檢附文件：
+                    <ol>
+                      <li>申請人身分證明文件及金融機構存摺影本。</li>
+                      <li>載有亡故榮民死亡記事之戶籍資料證明文件。但受理機構得連結內政部戶役政資訊系統查詢列印者，免附。</li>
+                    </ol>
+                    （四）申請期限：自死亡日起 1 年內提出申請，逾期不予受理。
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>喪葬慰問金
+</td>
+                  <td>服役 10 年以上而未就養且未領有軍公教等政府機關核發月退休俸（金）之有眷榮民死亡，其現居住於臺灣地區之配偶或直系血親，未申領政府機關編列預算發給喪葬補助費（慰問金），且具低、中低收入戶身分或領取中低收入老人生活津貼者，得自榮民亡故之日起 6 個月內，可向各榮民服務處申請一次性喪葬慰問金新臺幣 1 萬元。</td></tr>
+                  <tr><td>葬厝忠聯祠
+</td>
+                  <td>榮民亡故得申請「旌忠狀」及安厝「軍人忠靈祠」
+                  <ul>
+                    <li>軍人忠靈祠申請：縣市政府</li>
+                    <li>旌忠狀申請：地區後備指揮部</li>
+                    </ul>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_funeral_page" class="back-button">返回</a>
+      </div>
+
+<div id="crucial_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">公費就養榮民遺眷重點救助金</h1>
+            <img src="https://i.postimg.cc/4ybVBz30/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明
+</td>
+                  <td>
+                    （一）發放條件：就養榮民亡故，其無職業現居住於臺灣地區之配偶或直系血親，持本人有效之榮民遺眷家戶代表證者或榮民證，可向各榮民服務處申請發給一次性重點救助金新臺幣 3 萬元。<br>
+                    （二）申請地點：各榮民服務處。<br>
+                    （三）申請期限：自亡故之日起 6 個月內提出申請，逾期不予受理。
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>喪葬慰問金
+</td>
+                  <td>服役 10 年以上而未就養且未領有軍公教等政府機關核發月退休俸（金）之有眷榮民死亡，其現居住於臺灣地區之配偶或直系血親，未申領政府機關編列預算發給喪葬補助費（慰問金），且具低、中低收入戶身分或領取中低收入老人生活津貼者，得自榮民亡故之日起 6 個月內，可向各榮民服務處申請一次性喪葬慰問金新臺幣 1 萬元。</td></tr>
+                  <tr><td>葬厝忠聯祠
+</td>
+                  <td>榮民亡故得申請「旌忠狀」及安厝「軍人忠靈祠」
+                  <ul>
+                    <li>軍人忠靈祠申請：縣市政府</li>
+                    <li>旌忠狀申請：地區後備指揮部</li>
+                    </ul>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_crucial_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="imergency_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">遺眷_急難救助</h1>
+            <img src="https://i.postimg.cc/bwjdj2NF/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明
+</td>
+                  <td>（一）符合下列情形之一，得申請急難救助金(最高新臺幣 2 萬元)：
+                    <ol>
+                      <li>遭受意外傷害致生活陷於困境者。</li>
+                      <li>罹患重病、其他原因無法工作致生活陷入困境者。</li>
+                    </ol>
+                    （二）救助原則：同一事由 3 個月內不得重複申請。<br>
+                    （三）申請地點：各榮民服務處。<br>
+                    （四）檢附文件：
+                    <ol>
+                      <li>政府機關核發有相片之身分證件。</li>
+                      <li>低收、中低收入戶或領取中低收入老人生活津貼證明。</li>
+                      <li>診斷證明書及繳費收據。</li>
+                      <li>申請喪葬救助者，檢附死亡證明。但受理機構得連結內政部戶役政資訊系統查詢列印者，免附。</li>
+                      <li>身心障礙證明或重大傷病證明文件。</li>
+                      <li>其他相關佐證資料。</li>
+                    </ol>
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>公費就養榮民遺眷重點救助
+</td>
+                  <td>就養榮民亡故，其無職業現居住於臺灣地區之配偶或直系血親，持本人有效之榮民遺眷家戶代表證者或榮民證，可向各榮民服務處申請發給一次性重點救助金新臺幣 3 萬元。
+申請期限自亡故之日起 6 個月內提出申請。</td></tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_imergency_page" class="back-button">返回</a>
+      </div>
+
+  <div id="season_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">三節慰問</h1>
+            <img src="https://i.postimg.cc/bwjdj2NF/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明
+</td>
+                  <td>視年度預算額度，由榮民服務處自第一類依序核發遺眷三節慰問，至預算支用完畢為止，同一類別中以家境清寒者為優先；每戶每節核發慰問金新臺幣 3,000元：
+                    <li>（一）第一類：具低收入戶身分之遺眷。</li>
+                    <li>（二）第二類：具中低收入戶身分或領取中低收入老人生活津貼之遺眷。</li>
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>公費就養榮民遺眷重點救助
+</td>
+                  <td>就養榮民亡故，其無職業現居住於臺灣地區之配偶或直系血親，持本人有效之榮民遺眷家戶代表證者或榮民證，可向各榮民服務處申請發給一次性重點救助金新臺幣 3 萬元。
+申請期限自亡故之日起 6 個月內提出申請。</td></tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_season_page" class="back-button">返回</a>
+      </div>
+
+  <div id="funeral_care_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">喪葬慰問金</h1>
+            <img src="https://i.postimg.cc/bwjdj2NF/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明
+</td>
+                  <td>（一）發放條件：服役 10 年以上而未就養且未領有軍公教等政府機關核發月退休俸（金）之有眷榮民死亡，其現居住於臺灣地區之配偶或直系血親，未申領政府機關編列預算發給喪葬補助費（慰問金），且具低、中低收入戶身分或領取中低收入老人生活津貼者，得自榮民亡故之日起 6 個月內，可向各榮民服務處申請一次性喪葬慰問金新臺幣 1 萬元。<br>
+                    （二）檢附文件：
+                    <ol>
+                      <li>死亡證明文件。但受理機構得連結內政部戶役政資訊系統查詢列印者，免附。</li>
+                      <li>申請人身分證明文件。</li>
+                      <li>親屬關係證明文件。</li>
+                      <li>未領取政府機關編列預算核發喪葬補助費（慰問金）切結書。</li>
+                      <li>低收、中低收入戶或領取中低收入老人生活津貼證明。</li>
+                      <li>申請人金融機構存摺封面影本或帳號資料。</li>
+                    </ol>
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>公費就養榮民遺眷重點救助
+</td>
+                  <td>就養榮民亡故，其無職業現居住於臺灣地區之配偶或直系血親，持本人有效之榮民遺眷家戶代表證者或榮民證，可向各榮民服務處申請發給一次性重點救助金新臺幣 3 萬元。
+申請期限自亡故之日起 6 個月內提出申請。</td></tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_funeral_care_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="school_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">遺眷_子女就學補助</h1>
+            <img src="https://i.postimg.cc/zDbJKJQn/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明</td>
+                  <td>
+                    （一）補助對象：未支領軍公教月退休金、生補費、贍養金，未任職公務機關（構）或依規定不能領取子女教育補助費，且最近 1 年度綜合所得總額未超過新臺幣 114 萬元者之 30 歲以下（高中以下須無婚姻關係、無職業）且不具榮民身分之在學子女。<br>
+                    （二）子女就讀國內公立及已立案私立大學院校（含專科四、五年級）及五專前 3 年、高中（職）（不含公、軍費生）、國中、國小，前一學期學業成績平均 70 分以上，操行（大學）70 分以上，（高中以下）不得記（或累記）大過一次以上。碩、博士研究生僅限就養榮民遺眷子女可申請就學補助。<br>
+                    （三）榮民前配偶（不具榮民身分），其戶籍已記載榮民子女監護權歸屬者，準用前項之規定。<br>
+                    （四）政府預算發給之子女就學補助及學雜費減免等助學措施，申請人僅能擇一申領，不得同時申領。<br>
+                    （五）申請地點：各榮民服務處。<br>
+                    （六）各項申請條件、所需文件等詳細資訊，可至輔導會網站查詢（網址：http://www.vac.gov.tw/cp-2103-8706-1.html 首頁/主要服務/服務照顧/榮民子女就學補助及獎學金）。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_school_page" class="back-button">返回</a>
+      </div>
+
+  <div id="lunch_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">遺眷_子女午餐補助</h1>
+            <img src="https://i.postimg.cc/zDbJKJQn/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明</td>
+                  <td>
+                    （一）符合下列情形之一，得申請午餐補助金：
+                    <ol>
+                      <li>經戶籍所在地直轄市、縣（市）政府審核認定及證明低收入戶。</li>
+                      <li>經戶籍所在地直轄市、縣（市）政府審核認定及證明中低收入戶。</li>
+                      <li>地方政府依相關規定認定因家庭突發因素無力支付午餐費。</li>
+                      <li>無證明文件，經導師家庭訪視認定清寒確實無力支付午餐費。</li>
+                    </ol>
+                    （二）榮民前配偶（不具榮民身分），其戶籍已記載榮民子女監護權歸屬者，準用前項之規定。<br>
+                    （三）補助標準：午餐補助金核發標準以每日新臺幣 80 元，補助日數為未接受學校或機關午餐補助之例假日及寒暑假。<br>
+                    （四）申請地點：各榮民服務處。<br>
+                    （五）各項申請條件、所需文件等詳細資訊，可至輔導會網站（網址：http://www.vac.gov.tw/cp-2102-4044-1.html 首頁/主要服務/服務照顧/救助與慰問）查詢。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_lunch_page" class="back-button">返回</a>
+      </div>
+
+  <div id="dependent_foundation_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">財團法人榮民榮眷基金會</h1>
+            <img src="https://i.postimg.cc/zDbJKJQn/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明</td>
+                  <td>
+                    （一）服務項目：
+                    <ol>
+                      <li>榮民、榮眷重大災害救助(新臺幣 3 至 6 萬元)。</li>
+                      <li>就讀大學以上就學補助(公立大學 8,000 元、私立大學 1 萬元)及獎學金(博、碩士生 1 萬 5 千元，大學生 1 萬 2,000 元)。</li>
+                      <li>就讀國外高中、大學及研究所，符合國外求學菁英圓夢計畫獎學資格者，給予新臺幣 40~50 萬元一次性獎學補助。</li>
+                    </ol>
+                    （二）凡榮民意外亡故者，可申請榮民榮眷基金會「重大災害救助」，惟同一事由不得同時申請本會急難救助及慰問。<br>
+                    （三）申請地點：各榮民服務處，菁英圓夢計畫獎學金，逕向榮民榮眷基金會申請。<br>
+                    （四）各項申請條件、所需文件等詳細資訊，可至輔導會網站查詢（網址：http://www.vac.gov.tw/lp-2039-1.html 首頁/相關連結/本會相關連結/財團法人榮民榮眷基金/服務項目）；或逕至榮民榮眷基金會官網查詢（網址：http://www.vndf.org.tw）<br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_dependent_foundation_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="medical_care_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">申請榮家安養、失能(養護、失智)照顧</h1>
+            <img src="https://i.postimg.cc/mkD1NK0P/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明</td>
+                  <td>
+                    （一）入住年齡條件：在就養機構設備容量許可下，提供具安養、養護及失智自費入住需求之 65 歲以上民眾服務照顧，60 以上未滿 65 歲者，視榮家床位餘裕情形安置(參照老人福利法施行細則辦理)。<br>
+                    （二）床位提供原則：各榮家秉持優先收住榮民(眷)之原則運用床位，一般民眾如遇床位不足情形，於先行報會調整床位後再行收住。<br>
+                    （三）入住申請程序：與榮民自費入住榮家申請程序相同，不以戶籍地為入住依據，民眾得向有開放收住之榮家申請入住。<br>
+                    （四）服務內容說明：榮家提供之服務為生活服務、休閒服務及專業服務三部分。<br>
+                    （五）收費額度說明：服務費加計伙食費每人每月安養 1 萬 2,000 元、養護 2 萬 2,000 元、失智 3 萬 2,000 元。
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>就醫補助
+</td>
+                  <td>
+                    <ol>
+                      <li>補助健保第六類第一目之榮民遺眷家戶代表每人每月 1,249 元，及其無職業眷屬 每人每月 874 元。</li>
+                      <li>補助健保第六類第一目之榮民遺眷家戶代表全額健保部分負擔費用。</li>
+                      <li>補助榮民遺眷家戶代表至本會所屬醫療機構就醫之下列費用：</li>
+                      <ul>
+                        <li>掛號費。</li>
+                        <li>健保第六類第一目之榮民遺眷家戶代表使用本會核准之醫療必須健保不給付醫療項目費用。</li>
+                        <li>健保第五類或第六類第一目之榮民遺眷家戶代表榮民總醫院 2 人病房費差額</li>
+                        </ul>
+                      </ol>
+                  </td></tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_medical_care_page" class="back-button">返回</a>
+      </div>
+
+  <div id="dependent_work_train_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">推介就業、職業訓練</h1>
+            <img src="https://i.postimg.cc/mkD1NK0P/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明</td>
+                  <td>
+                     (一)適性評量及職涯諮詢：提供免費職業適性評量及職涯諮詢服務。<br>
+                     (二)就業媒合：有就業需求者，可就近向榮民服務處就業服務站登記求職。本會提供免費職缺媒合，並追蹤穩定就業情形。<br>
+                     (三)職業訓練：
+                    <ol>
+                      <li>權益項目：有職訓需求者，得報名參加本會職業訓練中心自辦訓練班，或參加職業訓練中心委外訓練班。</li>
+                      <li>費用：免費參訓 4 次，自第 5 次起自付訓練費 20%。</li>
+                      <li>限制條件：本會依是否特需照顧對象，訂有錄訓優先順序。</li>
+                    </ol>
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>就醫補助
+</td>
+                  <td>
+                    <ol>
+                      <li>補助健保第六類第一目之榮民遺眷家戶代表每人每月 1,249 元，及其無職業眷屬 每人每月 874 元。</li>
+                      <li>補助健保第六類第一目之榮民遺眷家戶代表全額健保部分負擔費用。</li>
+                      <li>補助榮民遺眷家戶代表至本會所屬醫療機構就醫之下列費用：</li>
+                      <ul>
+                        <li>掛號費。</li>
+                        <li>健保第六類第一目之榮民遺眷家戶代表使用本會核准之醫療必須健保不給付醫療項目費用。</li>
+                        <li>健保第五類或第六類第一目之榮民遺眷家戶代表榮民總醫院 2 人病房費差額</li>
+                        </ul>
+                      </ol>
+                  </td></tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_dependent_work_train_page" class="back-button">返回</a>
+      </div>
+  
+  <div id="dependent_other_page" class="page_study" style="display: none;">
+<!--         <div class="container_affair_homepage"> -->
+          <!-- 頁首圖片 -->
+          <header class="study_header">
+            <h1 class="study_title_left">
+            <a href="https://www.vac.gov.tw/mp-1.html" target="_blank">
+              <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
+            </a>
+            </h1>
+            <h1 class="study_title_right">榮民遺眷家戶代表(領有榮民遺眷家戶代表證者)健保費及就醫補助</h1>
+            <img src="https://i.postimg.cc/t41fmTh5/image.png" alt="職訓" class="header_study_image">
+          </header>
+       
+          <!-- 表格 -->
+          <section class="study_content">
+            <table class="study_info_table">
+<!--               <thead>
+                <tr>
+                  <th>項目</th>
+                  <th>內容</th>
+                </tr>
+              </thead> -->
+              <tbody>
+                <tr>
+                  <td>說明</td>
+                  <td>
+                    (一)補助健保第六類第一目之榮民遺眷家戶代表全額健保費(每人每月 1,249 元)，及其無職業眷屬 70%健保費(每人每月 874 元)。<br>
+                    (二)補助健保第六類第一目之榮民遺眷家戶代表全額健保部分負擔費用。<br>
+                    (三)補助榮民遺眷家戶代表至本會所屬醫療機構就醫之下列費用：
+                    <ol>
+                      <li>掛號費。</li>
+                      <li>健保第六類第一目之榮民遺眷家戶代表使用本會核准之醫療必須健保不給付醫療項目費用。</li>
+                      <li>健保第五類或第六類第一目之榮民遺眷家戶代表榮民總醫院 2 人病房費差額。</li>
+                    </ol>
+                  </td>
+                </tr>
+<!--                 <tr>
+                  <td>推介就業<br>職業訓練
+</td>
+                  <td>
+                    <ol>
+                      <li>提供免費職業適性評量及職涯諮詢服務。</li>
+                      <li>有就業需求者，可就近向榮民服務處就業服務站登記求職。本會提供免費職缺媒合，並追蹤穩定就業情形。</li>
+                      <li>職業訓練：</li>
+                      <ul>
+                        <li>權益項目：有職訓需求得報名本會職業訓練中心自辦訓練班，或參加職業訓練中心委外訓練班。</li>
+                        <li>費用：免費參訓 4 次，自第 5 次起自付訓練費 20%。</li>
+                        <li>限制條件：本會依特需照顧對象訂有錄訓優先順序。</li>
+                        </ul>
+                      </ol>
+                  </td></tr> -->
+              </tbody>
+            </table>
+          </section>
+       <a href="#" id="backButton_dependent_other_page" class="back-button">返回</a>
+      </div>
+  
+</body>
+</html>
