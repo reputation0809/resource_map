@@ -274,6 +274,30 @@ document.getElementById("backButton_lunch_page").addEventListener("click", funct
   document.getElementById("affair_homepage").style.display = "block";
 });
 
+document.getElementById("temple").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("temple_page").style.display = "block";
+  document.getElementById("affair_homepage").style.display = "none";
+});
+
+document.getElementById("backButton_temple_page").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("temple_page").style.display = "none";
+  document.getElementById("affair_homepage").style.display = "block";
+});
+
+document.getElementById("dependent_law").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("dependent_law_page").style.display = "block";
+  document.getElementById("affair_homepage").style.display = "none";
+});
+
+document.getElementById("backButton_dependent_law_page").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("dependent_law_page").style.display = "none";
+  document.getElementById("affair_homepage").style.display = "block";
+});
+
 document.getElementById("dependent_foundation").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("dependent_foundation_page").style.display = "block";
