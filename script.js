@@ -73,12 +73,12 @@ document.getElementById("backButton_page5").addEventListener("click", function (
 document.getElementById("affairButton").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("affair_homepage").style.display = "block";
-  document.getElementById("govern_page").style.display = "none";
+  document.getElementById("choose_page").style.display = "none";
 });
 
 document.getElementById("backButton_affair_homepage").addEventListener("click", function (e) {
   e.preventDefault();
-  document.getElementById("govern_page").style.display = "block";
+  document.getElementById("choose_page").style.display = "block";
   document.getElementById("affair_homepage").style.display = "none";
 });
 
