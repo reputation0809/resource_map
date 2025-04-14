@@ -403,4 +403,3 @@ function downloadImage(url, filename){
   link.click();
   document.body.removeChild(link);
 }
-
