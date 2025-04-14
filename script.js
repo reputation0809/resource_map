@@ -73,7 +73,8 @@ document.getElementById("backButton_page5").addEventListener("click", function (
 document.getElementById("affairButton").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("affair_homepage").style.display = "block";
-  document.getElementById("choose_page").style.display = "none";
+  document.getElementById("choose_page").style.display ="none";
+  document.getElementById("govern_page").style.display = "none";
 });
 
 document.getElementById("backButton_affair_homepage").addEventListener("click", function (e) {
@@ -238,6 +239,18 @@ document.getElementById("backButton_season_page").addEventListener("click", func
   document.getElementById("affair_homepage").style.display = "block";
 });
 
+document.getElementById("severe_nature").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("severe_nature_page").style.display = "block";
+  document.getElementById("affair_homepage").style.display = "none";
+});
+
+document.getElementById("backButton_severe_nature_page").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("severe_nature_page").style.display = "none";
+  document.getElementById("affair_homepage").style.display = "block";
+});
+
 document.getElementById("funeral_care").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("funeral_care_page").style.display = "block";
@@ -259,6 +272,30 @@ document.getElementById("school").addEventListener("click", function (e) {
 document.getElementById("backButton_school_page").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("school_page").style.display = "none";
+  document.getElementById("affair_homepage").style.display = "block";
+});
+
+document.getElementById("school_award").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("school_award_page").style.display = "block";
+  document.getElementById("affair_homepage").style.display = "none";
+});
+
+document.getElementById("backButton_school_award_page").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("school_award_page").style.display = "none";
+  document.getElementById("affair_homepage").style.display = "block";
+});
+
+document.getElementById("elite").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("elite_page").style.display = "block";
+  document.getElementById("affair_homepage").style.display = "none";
+});
+
+document.getElementById("backButton_elite_page").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("elite_page").style.display = "none";
   document.getElementById("affair_homepage").style.display = "block";
 });
 
@@ -319,6 +356,18 @@ document.getElementById("medical_care").addEventListener("click", function (e) {
 document.getElementById("backButton_medical_care_page").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("medical_care_page").style.display = "none";
+  document.getElementById("affair_homepage").style.display = "block";
+});
+
+document.getElementById("dependent_medical").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("dependent_medical_page").style.display = "block";
+  document.getElementById("affair_homepage").style.display = "none";
+});
+
+document.getElementById("backButton_dependent_medical_page").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("dependent_medical_page").style.display = "none";
   document.getElementById("affair_homepage").style.display = "block";
 });
 
