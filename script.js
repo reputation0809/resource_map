@@ -16,6 +16,18 @@ document.getElementById("backButton_page3").addEventListener("click", function (
   document.getElementById("govern_page").style.display = "none";
 });
 
+document.getElementById("promotionButton").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("promotion_page").style.display = "block";
+  document.getElementById("choose_page").style.display = "none";
+});
+
+document.getElementById("backButton_promotion_page").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.getElementById("choose_page").style.display = "block";
+  document.getElementById("promotion_page").style.display = "none";
+});
+
 document.getElementById("backButton_page3_1").addEventListener("click", function (e) {
   e.preventDefault();
   document.getElementById("govern_page").style.display = "block";
@@ -403,3 +415,4 @@ function downloadImage(url, filename){
   link.click();
   document.body.removeChild(link);
 }
+
