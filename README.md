@@ -1,2 +1,2 @@
 # resource_map
-For 輔導會
+For 臺東縣榮民服務處
