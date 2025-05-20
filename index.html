@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- 
+  =============================================
+  📌【說明】
+  本 HTML 網頁為多頁面式設計，依不同按鈕點選切換頁面內容。
+
+  每個頁面都使用 <div id="xxx_page" class="page" style="display: none;"> 做為區塊容器，
+  點擊對應的按鈕，會顯示不同區塊的內容。
+
+  🧩 重複區塊說明（通常有標題、圖片、表格、返回按鈕）：
+  - <header>：每個頁面的標題圖片或 LOGO
+  - <section class="study_content">：主要內容區，例如表格資訊
+  - <table class="study_info_table">：表格內容呈現資訊
+  - <a href="#" class="back-button">：返回上一層的按鈕
+
+  📁 常見結構例如：
+  <div id="XXX_page" class="page_study" style="display: none;">
+    <header>...</header>
+    <section class="study_content">...</section>
+    <a href="#" id="backButton_XXX" class="back-button">返回</a>
+  </div>
+
+  ✏️ 若要新增服務項目，只需複製現有區塊，並修改：
+  - id
+  - 標題文字
+  - 表格內容或段落文字
+  - 按鈕 id
+
+  🔒 注意：每個區塊的 id 需唯一，否則無法正確切換頁面。
+  =============================================
+-->
+
+<!-- 🔹頁面區塊開始：<div id="homepage" class="page"> -->
   <div id="homepage" class="page">
     <img src="https://media-hosting.imagekit.io/955508b94acb4512/new_title.jpg?Expires=1837730921&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=l4bw8LBxvQ2HmYAvE34GbIYdChc9zciLqLRjTjHS1pKHRiUZK-9dvKTwtWUNjDT-qvFhXdbZEp0XMsHSesYBCn2wy0drNuztRgtochMKMVYpZURluCMBV0WYru8LcxKtxOpVSCaxNJBVQVHXWTVlaLIVAi2FeNi9n2uFbdBopOIkIjUQ-TP7G1lL5AYez7dp3pwPT3SxNG6O0U0HE0IK0FE1gpgyOSVgi~Bn0eu7~ebGgTOmsrfY1Q-BwIBXfYlwPS5nlBMOJy3qwpVJxKoMJGqAqYGk0NiWZq7dUNoAj6GgTdIgKeeNQjXs9l29fdKKwKoaaYmk-4zx9XUuuN4s~w__" alt="">
     <a href="#" id="enterButton" class="enter-button">按此進入</a>
   </div>
   
+<!-- 🔹頁面區塊開始：<div id="choose_page" class="page2" style="display: none;"> -->
   <div id="choose_page" class="page2" style="display: none;">
     <h1>輔導會服務項目:
     </h1>
@@ -40,6 +73,7 @@
     <a href="#" id="backButton" class="back-button">返回</a>
 </div>
   
+<!-- 🔹頁面區塊開始：<div id="promotion_page" class="page2" style="display: none;"> -->
   <div id="promotion_page" class="page2" style="display: none;">
     <section class="promotion-container">
       <div class="promo-card">
@@ -64,6 +98,7 @@
     <a href="#" id="backButton_promotion_page" class="back-button">返回</a>
   </div>
   
+<!-- 🔹頁面區塊開始：<div id="govern_page" class="page3" style="display: none;"> -->
   <div id="govern_page" class="page3" style="display: none;">
   <h1>請選擇系統單位:</h1>
     <div class="options">
@@ -94,6 +129,7 @@
     <a href="#" id="backButton_page3" class="back-button">返回</a>
     </div>
   
+<!-- 🔹頁面區塊開始：<div id="money_page" class="page4" style="display: none;"> -->
   <div id="money_page" class="page4" style="display: none;">
   <!-- 頁首 -->
     <header class="header_money">
@@ -152,6 +188,7 @@
     <a href="#" id="backButton_page4" class="back-button">返回</a>
   </div>
   
+<!-- 🔹頁面區塊開始：<div id="community_page" class="page5" style="display: none;"> -->
   <div id="community_page" class="page5" style="display: none;">
     
     <header class="header_money">
@@ -220,6 +257,7 @@
     <a href="#" id="backButton_page5" class="back-button">返回</a>
     </div>
   
+<!-- 🔹頁面區塊開始：<div id="care_page" class="page3_1" style="display: none;"> -->
   <div id="care_page" class="page3_1" style="display: none;">
   <div class="container">
      <div class="service-select-container">
@@ -281,6 +319,7 @@
   </div>
 </div>
   
+<!-- 🔹頁面區塊開始：<div id="county_page" class="page3_3" style="display: none;"> -->
 <div id="county_page" class="page3_3" style="display: none;">  
   <!-- 頁首圖片 -->
     <div class="header">
@@ -324,6 +363,7 @@
   
   </div>  
     
+<!-- 🔹頁面區塊開始：<div id="affair_homepage" class="page_affair" style="display: none;"> -->
    <div id="affair_homepage" class="page_affair" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -345,7 +385,7 @@
               <li><a href="#" id="medical" target="_blank">安心就醫</a></li>
               <li><a href="#" id="train" target="_blank">職訓逐夢</a></li>
               <li><a href="#" id="job" target="_blank">就業情報</a></li>
-              <li><a href="#" id="study" target="_blank">快樂就學</a></li>
+              <li><a href="#" id="study" target="_blank">快樂就學</a></li>
               <li><a href="#" id="retire_money" target="_blank">退休俸退除給付</a></li>
             </ul> -->
             <section class="study_content">
@@ -354,11 +394,11 @@
                 <tr>
                   <td>資格</td>
                   <td>
-                    一、志願服現役滿10年以上，依法退伍除役之軍士官兵。 <br>
-                    二、於79年2月9日前入營服志願役軍（士）官、於94年8月9日前入營之志願役士兵，經國防部證實現役年資符合當時規定者。<br>
-                    三、因作戰或因公致病、傷或身心障礙而失去工作能力，於退伍除役後，生計艱難需長期醫療或就養，其傷殘經鑑定合格者。<br>
-                    四、曾參加民國47年八二三臺海保衛戰役之軍士官兵（含金門馬祖民防自衛隊）及其他經國防部核定之關係國家安全之重要戰役，經國防部核認有案者。<br>
-                    附記：退除役官兵有國軍退除役官兵輔導條例第32條各項所定之情形者，停止榮民權益。
+                    一、志願服現役滿10年以上，依法退伍除役之軍士官兵。 <br>
+                    二、於79年2月9日前入營服志願役軍（士）官、於94年8月9日前入營之志願役士兵，經國防部證實現役年資符合當時規定者。<br>
+                    三、因作戰或因公致病、傷或身心障礙而失去工作能力，於退伍除役後，生計艱難需長期醫療或就養，其傷殘經鑑定合格者。<br>
+                    四、曾參加民國47年八二三臺海保衛戰役之軍士官兵（含金門馬祖民防自衛隊）及其他經國防部核定之關係國家安全之重要戰役，經國防部核認有案者。<br>
+                    附記：退除役官兵有國軍退除役官兵輔導條例第32條各項所定之情形者，停止榮民權益。
                   </td>
                 </tr>
                 <tr>
@@ -371,7 +411,7 @@
                       <a href="#" id="medical" target="_blank">四、安心就醫</a>
                       <a href="#" id="train" target="_blank">五、職訓逐夢</a>
                       <a href="#" id="job" target="_blank">六、就業情報</a>
-                      <a href="#" id="study" target="_blank">七、快樂就學</a>
+                      <a href="#" id="study" target="_blank">七、快樂就學</a>
                       <a href="#" id="retire_money" target="_blank">八、退休俸退除給付</a>
 <!--                       </ul> -->
                   </td>
@@ -423,8 +463,8 @@
             </table>
           </section>
           <h2 class="section_affair_homepage_title">公用表下載區</h2>
-<!--           <a href="" target="_blank">榮民(第一類退除役官兵)權益簡表</a> -->
-          <a href="https://raw.githubusercontent.com/reputation0809/resource_map/main/榮民(第一類退除役官兵)1120615-更新.pdf" download>榮民(第一類退除役官兵)權益簡表</a>
+<!--           <a href="" target="_blank">榮民(第一類退除役官兵)權益簡表</a> -->
+          <a href="https://raw.githubusercontent.com/reputation0809/resource_map/main/榮民(第一類退除役官兵)1120615-更新.pdf" download>榮民(第一類退除役官兵)權益簡表</a>
           <a href="https://raw.githubusercontent.com/reputation0809/resource_map/main/榮民遺眷權益簡表.pdf" download>榮民遺眷權益簡表</a>
           <a href="https://raw.githubusercontent.com/reputation0809/resource_map/main/112年初申請公費安養應備資料一覽(白色).docx" download>112年初申請公費安養應備資料一覽(白色)</a>
           <a href="https://raw.githubusercontent.com/reputation0809/resource_map/main/1101229台東縣榮服處就醫服務項目表(紅色).doc" download>1101229台東縣榮服處就醫服務項目表(紅色)</a>
@@ -445,6 +485,7 @@
      <a href="#" id="backButton_affair_homepage" class="back-button">返回</a>
         </div>
         
+<!-- 🔹頁面區塊開始：<div id="honor_identity_page" class="page_study" style="display: none;"> -->
     <div id="honor_identity_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -472,10 +513,10 @@
                   <td>申請榮民證</td>
 <!--                   <td>申請資格
         <ol>
-            <li>志願服現役滿 10 年以上，依法退伍除役之軍士官兵。</li>
-            <li>於 79 年 2 月 9 日前已入營服志願役軍（士）官、於 94 年 8 月 9 日前已入營之志願役士兵，經國防部證實現役年資符合當時規定者。</li>
-            <li>因作戰或因公致病、傷或身心障礙而失去工作能力，於退伍除役後，生計艱難需長期醫療或就養者。</li>
-            <li>曾參加民國 47 年八二三臺海保衛戰役之軍士官兵（含金門馬祖民防自衛隊）及其他經國防部核定之關係國家安全之重要戰役者。</li>
+            <li>志願服現役滿 10 年以上，依法退伍除役之軍士官兵。</li>
+            <li>於 79 年 2 月 9 日前已入營服志願役軍（士）官、於 94 年 8 月 9 日前已入營之志願役士兵，經國防部證實現役年資符合當時規定者。</li>
+            <li>因作戰或因公致病、傷或身心障礙而失去工作能力，於退伍除役後，生計艱難需長期醫療或就養者。</li>
+            <li>曾參加民國 47 年八二三臺海保衛戰役之軍士官兵（含金門馬祖民防自衛隊）及其他經國防部核定之關係國家安全之重要戰役者。</li>
         </ol>
         <p class="note">附記：退除役官兵有國軍退除役官兵輔導條例第 32 條各項所定之情形者，停止榮民權益。</p>
 
@@ -501,6 +542,7 @@
        <a href="#" id="backButton_honor_identity_page" class="back-button">返回</a>
       </div> 
   
+<!-- 🔹頁面區塊開始：<div id="home_page" class="page_study" style="display: none;"> -->
     <div id="home_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -526,7 +568,7 @@
               <tbody>
                 <tr>
                   <td>公費安養</td>
-                  <td>榮民服役期間因戰(公)傷殘、且無固定職業，或榮民年滿 61 歲且無固定職業，且全戶所得低於一定標準，經核定就養者，每月可領取就養給付 1 萬 5,471 元，並得依意願公費進住榮家。</td>
+                  <td>榮民服役期間因戰(公)傷殘、且無固定職業，或榮民年滿 61 歲且無固定職業，且全戶所得低於一定標準，經核定就養者，每月可領取就養給付 1 萬 5,471 元，並得依意願公費進住榮家。</td>
                 </tr>
                 <tr>
                   <td>自費安養</td>
@@ -534,7 +576,7 @@
                 </tr>
                 <tr>
                   <td>申請進住榮家</td>
-                  <td>凡具有榮民身分且符合進住(或併同安置)條件者，得檢具相關資料向各榮家、戶籍所在地或居住地之榮民服務處提出申請。</td>
+                  <td>凡具有榮民身分且符合進住(或併同安置)條件者，得檢具相關資料向各榮家、戶籍所在地或居住地之榮民服務處提出申請。</td>
                 </tr>
               </tbody>
             </table>
@@ -542,6 +584,7 @@
        <a href="#" id="backButton_home_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="study_page" class="page_study" style="display: none;"> -->
     <div id="study_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -551,7 +594,7 @@
               <img src="https://i.postimg.cc/kMhn4thq/image.png" alt="輔導會" class="header_study_left_image">
             </a>
             </h1>
-            <h1 class="study_title_right">快樂就學</h1>
+            <h1 class="study_title_right">快樂就學</h1>
             <img src="https://i.postimg.cc/SRsGMbJ1/study.png" alt="就學" class="header_study_image">
           </header>
        
@@ -567,31 +610,31 @@
               <tbody>
                 <tr>
                   <td>入學加分優待</td>
-                  <td>退伍軍人報考高中以上學校，其入學或轉學考試成績依「退伍軍人報考高級中等以上學校優待辦法」給予加分優待。（博士班、碩士班、學士後各學系、回流教育中之進修學士班、在職專班除外）。
+                  <td>退伍軍人報考高中以上學校，其入學或轉學考試成績依「退伍軍人報考高級中等以上學校優待辦法」給予加分優待。（博士班、碩士班、學士後各學系、回流教育中之進修學士班、在職專班除外）。
 </td>
                 </tr>
                 <tr>
-                  <td>推甄就讀大專校院</td>
-                  <td>本會與國立臺北商業大學等多所大專校院合作，每年於 4 至 6 月辦理二專、二技、四技／大學推甄入學作業，輔導退除役官兵順利就讀大專校院。<br>
+                  <td>推甄就讀大專校院</td>
+                  <td>本會與國立臺北商業大學等多所大專校院合作，每年於 4 至 6 月辦理二專、二技、四技／大學推甄入學作業，輔導退除役官兵順利就讀大專校院。<br>
                     <ol>
-                      <li>推甄二專：113 年本會辦理推甄二專進修部，計有國立臺中科技大學等 8 校。</li>
-                      <li>推甄二技：113 年本會辦理推甄二技進修部，計有國立臺北商業大學等 26 校。</li>
-                      <li>推甄四技/大學：113 年本會辦理推甄四年制進修部、進修學士班，計有國立臺北
+                      <li>推甄二專：113 年本會辦理推甄二專進修部，計有國立臺中科技大學等 8 校。</li>
+                      <li>推甄二技：113 年本會辦理推甄二技進修部，計有國立臺北商業大學等 26 校。</li>
+                      <li>推甄四技/大學：113 年本會辦理推甄四年制進修部、進修學士班，計有國立臺北
 大學等 43 校。</li>
                       </ol>
                   </td>
                 </tr>
                 <tr>
-                  <td>就學補助生活津貼及獎勵</td>
-                  <td>為激勵、獎勵退除役官兵繼續就學深造，凡就讀國內具有正式學籍之大專校院及研究所或出國就讀研究所攻讀碩、博士者，提供學雜費補助每學期 20,000~80,000 元；成績優異獎勵擇優每學期 10,000 元。另為使經濟弱勢之退除役官兵再就學者，於就學期間減輕其經濟壓力，申請本會就學補助且具中低(低)收入戶資格者，就學期間按月核發就學生活津貼 5,900 元。俾以認真向學，充實專業知能，提升就業競爭力，以順利就業。</td>
+                  <td>就學補助生活津貼及獎勵</td>
+                  <td>為激勵、獎勵退除役官兵繼續就學深造，凡就讀國內具有正式學籍之大專校院及研究所或出國就讀研究所攻讀碩、博士者，提供學雜費補助每學期 20,000~80,000 元；成績優異獎勵擇優每學期 10,000 元。另為使經濟弱勢之退除役官兵再就學者，於就學期間減輕其經濟壓力，申請本會就學補助且具中低(低)收入戶資格者，就學期間按月核發就學生活津貼 5,900 元。俾以認真向學，充實專業知能，提升就業競爭力，以順利就業。</td>
                 </tr>
                 <tr>
                   <td>大專校院進修補助</td>
-                  <td>校級以下退除役官兵參加國內大專校院推廣教育學分班、選修學分班、空中大學（專校）函授學分班，可向各地榮民服務處申請學雜費補助，每人補助總金額以 12 萬元為上限。領有身心障礙或持有低、中低收入戶證明者，補助總金額以 16 萬元為上限，以補助 12 次為限，每年限申請 3 次。</td>
+                  <td>校級以下退除役官兵參加國內大專校院推廣教育學分班、選修學分班、空中大學（專校）函授學分班，可向各地榮民服務處申請學雜費補助，每人補助總金額以 12 萬元為上限。領有身心障礙或持有低、中低收入戶證明者，補助總金額以 16 萬元為上限，以補助 12 次為限，每年限申請 3 次。</td>
                 </tr>
                 <tr>
                   <td>就業考試進修補助</td>
-                  <td>校級以下退除役官兵參加政府立案補習班補習，且實際報名參加考試院辦理之國家考試及國(公)營事業機構進用考試，其補習課程、購買教材及考試用書等費用可向各地榮民服務處申請補助。補助總金額以 5 萬元為上限。補助次數以 4 次為限，每年限申請 1 次。
+                  <td>校級以下退除役官兵參加政府立案補習班補習，且實際報名參加考試院辦理之國家考試及國(公)營事業機構進用考試，其補習課程、購買教材及考試用書等費用可向各地榮民服務處申請補助。補助總金額以 5 萬元為上限。補助次數以 4 次為限，每年限申請 1 次。
 </td>
                 </tr>
               </tbody>
@@ -600,6 +643,7 @@
        <a href="#" id="backButton_study_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="job_page" class="page_study" style="display: none;"> -->
   <div id="job_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -625,28 +669,28 @@
               <tbody>
                 <tr>
                   <td>轉任公職考試</td>
-                  <td>本會為配合退除役官兵轉任公職需要，自民國 47 年起洽請考試院舉辦退除役軍人轉任公務人員特種考試，92 年起舉辦國軍上校以上軍官轉任公務人員考試，以增進退除役官兵就業機會。<br>註：本考試之退除役軍人，係指具退除役官兵身分，且領有榮譽國民證者。另自 105 年 4 月起，現役軍人服役十年以上、或因作戰或因公致病、傷或身心障礙經核定有案者，退前 2 個月得應本項考試。</td>
+                  <td>本會為配合退除役官兵轉任公職需要，自民國 47 年起洽請考試院舉辦退除役軍人轉任公務人員特種考試，92 年起舉辦國軍上校以上軍官轉任公務人員考試，以增進退除役官兵就業機會。<br>註：本考試之退除役軍人，係指具退除役官兵身分，且領有榮譽國民證者。另自 105 年 4 月起，現役軍人服役十年以上、或因作戰或因公致病、傷或身心障礙經核定有案者，退前 2 個月得應本項考試。</td>
                 </tr>
                 <tr>
                   <td>會內及轉投資事業機構就業</td>
-                  <td>本會所屬農場機構（如清境農場、武陵農場、福壽山農場…）任用新進人員時，條件相等而為退除役官兵者優先錄用。本會轉投資事業機構（如欣欣客運公司…）遇有職工出缺甄試時，條件相當而為退除役官兵者亦優先進用。<br>註：本會為安置退除役官兵順利轉業，創設農、工業等事業機構或投資民營企業，惟近年來配合政府民營化政策，創設機構就業機會逐年漸少，輔導退除役官兵就業工作轉為推介至一般民間企業就業為主。</td>
+                  <td>本會所屬農場機構（如清境農場、武陵農場、福壽山農場…）任用新進人員時，條件相等而為退除役官兵者優先錄用。本會轉投資事業機構（如欣欣客運公司…）遇有職工出缺甄試時，條件相當而為退除役官兵者亦優先進用。<br>註：本會為安置退除役官兵順利轉業，創設農、工業等事業機構或投資民營企業，惟近年來配合政府民營化政策，創設機構就業機會逐年漸少，輔導退除役官兵就業工作轉為推介至一般民間企業就業為主。</td>
                 </tr>
                 <tr>
                   <td>促進退除役官兵穩定就業津貼</td>
-                  <td>為激勵退除役官兵就業意願，培養專業技能，促進長期就業，發給「訓後就業津貼」及「推介就業津貼」，以協助退除役官兵重返職場，穩定就業，安定生活。<br>      
+                  <td>為激勵退除役官兵就業意願，培養專業技能，促進長期就業，發給「訓後就業津貼」及「推介就業津貼」，以協助退除役官兵重返職場，穩定就業，安定生活。<br>      
             <ol>
-              <li>訓後就業穩定津貼：未就業退除役官兵參加全日制職業訓練班隊，結訓次日起 6 個月內就業，且連續就業滿 3 個月以上者，發給訓後就業津貼，榮民前半年每月 1 萬2 千元，後半年每月 8 千元；第二類退除役官兵前半年每月 6 千元，後半年每月 4千元。</li>
-              <li>推介就業穩定津貼：未就業退除役官兵經輔導會所屬榮民服務處或職訓中心開立介紹卡推介就業後，於同一就業機構連續就業滿 3 個月，發給推介就業津貼，榮民每月 8 千元；第二類退除役官兵每月 4 千元。</li>
-              <li>前兩項津貼合併計發以12個月為限。</li>
+              <li>訓後就業穩定津貼：未就業退除役官兵參加全日制職業訓練班隊，結訓次日起 6 個月內就業，且連續就業滿 3 個月以上者，發給訓後就業津貼，榮民前半年每月 1 萬2 千元，後半年每月 8 千元；第二類退除役官兵前半年每月 6 千元，後半年每月 4千元。</li>
+              <li>推介就業穩定津貼：未就業退除役官兵經輔導會所屬榮民服務處或職訓中心開立介紹卡推介就業後，於同一就業機構連續就業滿 3 個月，發給推介就業津貼，榮民每月 8 千元；第二類退除役官兵每月 4 千元。</li>
+              <li>前兩項津貼合併計發以12個月為限。</li>
             </ol>
                 </tr>
                 <tr>
                   <td>創業諮詢輔導</td>
-                  <td>為協助退除役官兵降低創業風險，提高創業成功機率，委由專業機構，安排顧問輔導諮詢撰寫貸款計畫書資訊，協助已創業者適時導入政府資源，申辦創業貸款利息補貼，促進事業穩定發展。透過創業知能課程、研習活動、講座等方式，協助個案了解創業風險、充實營銷財管等知能。</td>
+                  <td>為協助退除役官兵降低創業風險，提高創業成功機率，委由專業機構，安排顧問輔導諮詢撰寫貸款計畫書資訊，協助已創業者適時導入政府資源，申辦創業貸款利息補貼，促進事業穩定發展。透過創業知能課程、研習活動、講座等方式，協助個案了解創業風險、充實營銷財管等知能。</td>
                 </tr>
                 <tr>
                   <td>外介就業</td>
-                  <td>輔導會為協助退除役官兵順利就業、重返職場，積極與各區域內企業、工商團體建立良好的互動關係、拓展就業管道，並結合各地區既有就業服務資源，以期推介榮民(眷)及第二類退除役官兵成為企業的好幫手。另與專業機構合作，提供職業適性評量、職涯諮詢、職涯講座及就業媒合等服務，並逐一針對個案需求，協助輔導順利就業，期退除役官兵能繼續貢獻經驗、智慧、心力，以服務社會、報效國家。</td>
+                  <td>輔導會為協助退除役官兵順利就業、重返職場，積極與各區域內企業、工商團體建立良好的互動關係、拓展就業管道，並結合各地區既有就業服務資源，以期推介榮民(眷)及第二類退除役官兵成為企業的好幫手。另與專業機構合作，提供職業適性評量、職涯諮詢、職涯講座及就業媒合等服務，並逐一針對個案需求，協助輔導順利就業，期退除役官兵能繼續貢獻經驗、智慧、心力，以服務社會、報效國家。</td>
                 </tr>
               </tbody>
             </table>
@@ -654,6 +698,7 @@
        <a href="#" id="backButton_job_page" class="back-button">返回</a>
       </div> 
   
+<!-- 🔹頁面區塊開始：<div id="train_page" class="page_study" style="display: none;"> -->
   <div id="train_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -679,25 +724,25 @@
               <tbody>
                 <tr>
                   <td>產訓合作</td>
-                  <td>將職業訓練與產業趨勢、企業用人及退除役官兵就業需求連結，由本會與企業用人單位、訓練機構結合為訓練夥伴，依職缺技能養成需求共同規劃訓練課程，辦理產訓合作；報名參訓人員，經由企業安排面談甄選後錄訓參訓，參訓人員結訓成績合格，企業直接僱用。</td>
+                  <td>將職業訓練與產業趨勢、企業用人及退除役官兵就業需求連結，由本會與企業用人單位、訓練機構結合為訓練夥伴，依職缺技能養成需求共同規劃訓練課程，辦理產訓合作；報名參訓人員，經由企業安排面談甄選後錄訓參訓，參訓人員結訓成績合格，企業直接僱用。</td>
                 </tr>
                 <tr>
-                  <td>自辦訓練</td>
-                  <td>本會設退除役官兵職業訓練中心 1 所，辦理退除役官兵職業訓練、技能檢定及就業輔導等工作。職訓中心擁有現代化的教學設備與場地，並建置完善的規劃、設計、執行、查核、成果評估管理系統，教學品質通過 TTQS 金牌認證及國家人才發展獎，為全國頗負盛名的職訓機構。職訓中心目前開設餐飲、資訊、精密機械、物業管理、機械修護、能源、創意設計等七大職類訓練課程，並廣邀具有實務經驗的業界師資授課，協助學員習得一技之長，結訓學員在職場的表現廣獲好評，歡迎退除役官兵及眷屬報名參訓。
+                  <td>自辦訓練</td>
+                  <td>本會設退除役官兵職業訓練中心 1 所，辦理退除役官兵職業訓練、技能檢定及就業輔導等工作。職訓中心擁有現代化的教學設備與場地，並建置完善的規劃、設計、執行、查核、成果評估管理系統，教學品質通過 TTQS 金牌認證及國家人才發展獎，為全國頗負盛名的職訓機構。職訓中心目前開設餐飲、資訊、精密機械、物業管理、機械修護、能源、創意設計等七大職類訓練課程，並廣邀具有實務經驗的業界師資授課，協助學員習得一技之長，結訓學員在職場的表現廣獲好評，歡迎退除役官兵及眷屬報名參訓。
 </td>
                 </tr>
                 <tr>
-                  <td>委外訓練</td>
-                  <td>提供嫻熟技能與培育第二專長，兼收有業與無業者為訓練對象，並結合地區產業特色、用人職缺及退除役官兵需求規劃辦理各職類課程，以培養就業技能及促進就業為主。</td>
+                  <td>委外訓練</td>
+                  <td>提供嫻熟技能與培育第二專長，兼收有業與無業者為訓練對象，並結合地區產業特色、用人職缺及退除役官兵需求規劃辦理各職類課程，以培養就業技能及促進就業為主。</td>
                 </tr>
                 <tr>
-                  <td>職業訓練補助</td>
+                  <td>職業訓練補助</td>
                   <td>
                     <ol>
-                      <li>職訓補助以輔導就業為目的，開放自行參加中央及地方政府各級機關、行政院捐助成立之財團法人、持有勞動部人才發展品質管理系統(TTQS)訓練機構版有效證書之訓練機構所辦訓練及勞動部技術士技能檢定職類各項訓練。參訓前須經榮服處同意備案，完成訓練翌日起 6 個月內就業且仍在職中，向原同意備案的榮服處申請訓練費用補助。
+                      <li>職訓補助以輔導就業為目的，開放自行參加中央及地方政府各級機關、行政院捐助成立之財團法人、持有勞動部人才發展品質管理系統(TTQS)訓練機構版有效證書之訓練機構所辦訓練及勞動部技術士技能檢定職類各項訓練。參訓前須經榮服處同意備案，完成訓練翌日起 6 個月內就業且仍在職中，向原同意備案的榮服處申請訓練費用補助。
 </li>
-                      <li>補助金額：(限輔導期限內之退除役官兵)
-                      <ol><li>第一類退除役官兵：總金額新臺幣12萬元。</li><li>第二類退除役官兵：總金額新臺幣8萬元。<li>首次申請參加職訓補助超過前述總額度，符合請領資格者，得予全額補助：<ol><li>完訓後須從事與職業訓練相關之行(職)業。</li><li>於同一就業機構工作滿 3 個月以上。</li></ol></li>
+                      <li>補助金額：(限輔導期限內之退除役官兵)
+                      <ol><li>第一類退除役官兵：總金額新臺幣12萬元。</li><li>第二類退除役官兵：總金額新臺幣8萬元。<li>首次申請參加職訓補助超過前述總額度，符合請領資格者，得予全額補助：<ol><li>完訓後須從事與職業訓練相關之行(職)業。</li><li>於同一就業機構工作滿 3 個月以上。</li></ol></li>
 </li></ol></li>
                 <li>完成訓練翌日起算 6 個月內須就業或完訓前已就業，且仍在就業中，始得申請訓練費用補助。</li>
                       </ol>
@@ -709,6 +754,7 @@
        <a href="#" id="backButton_train_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="medical_page" class="page_study" style="display: none;"> -->
   <div id="medical_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -734,33 +780,33 @@
               <tbody>
                 <tr>
                   <td>國軍醫院就醫優惠</td>
-                  <td>榮民(無論有無職業)至國軍醫院就醫免掛號費。</td>
+                  <td>榮民(無論有無職業)至國軍醫院就醫免掛號費。</td>
                 </tr>
                 <tr>
                   <td>健保保費補助</td>
-                  <td>健保第六類第一目之無職榮民全額健保費(每人每月新臺幣 1,377 元)及依附之無職業眷屬 70%健保費(每人每月新臺幣 964 元)，由本會補助。</td>
+                  <td>健保第六類第一目之無職榮民全額健保費(每人每月新臺幣 1,377 元)及依附之無職業眷屬 70%健保費(每人每月新臺幣 964 元)，由本會補助。</td>
                 </tr>
                 <tr>
                   <td>健保部分負擔自付額補助</td>
-                  <td>健保第六類第一目之無職榮民，於健保特約醫療院所就醫，其「健保部分負擔自付額」，由本會補助。有職榮民至本會所屬醫療機構就醫，其「健保部分負擔自付額」依退伍時軍階按比例補助，上校級 20%；中、少校級 50%；尉級 70%；士官及士兵級100%。</td>
+                  <td>健保第六類第一目之無職榮民，於健保特約醫療院所就醫，其「健保部分負擔自付額」，由本會補助。有職榮民至本會所屬醫療機構就醫，其「健保部分負擔自付額」依退伍時軍階按比例補助，上校級 20%；中、少校級 50%；尉級 70%；士官及士兵級100%。</td>
                 </tr>
                 <tr>
                   <td>掛號費補助</td>
-                  <td>榮民(無論有無職業)至本會所屬醫療機構就診，免繳掛號費。</td>
+                  <td>榮民(無論有無職業)至本會所屬醫療機構就診，免繳掛號費。</td>
                 </tr>
                 <tr>
                   <td>住院補助</td>
-                  <td>公費就養榮民至輔導會所屬醫療機構住院，伙食費差額由輔導會補助。健保 6 類 1 目及低收入戶之榮民，於榮總住院之 2 人病房差額費(不含分院)，由本會補助(有職榮民無住院相關補助)。
+                  <td>公費就養榮民至輔導會所屬醫療機構住院，伙食費差額由輔導會補助。健保 6 類 1 目及低收入戶之榮民，於榮總住院之 2 人病房差額費(不含分院)，由本會補助(有職榮民無住院相關補助)。
 </td>
                 </tr>
                 <tr>
-                  <td>醫療必須但健保不給付項目費用補助</td>
-                  <td>無職榮民投保健保 6 類 1 目，至本會所屬醫療機構就醫，經醫師評估為治療必須使用之藥衛材、手術、檢驗、治療、麻醉…等，於就醫時直接扣除(核准項目詳本會官網主要服務-就醫服務-就醫優惠-下載醫療必須健保不給付醫療項目一覽表，並與醫師確認補助項目)。
+                  <td>醫療必須但健保不給付項目費用補助</td>
+                  <td>無職榮民投保健保 6 類 1 目，至本會所屬醫療機構就醫，經醫師評估為治療必須使用之藥衛材、手術、檢驗、治療、麻醉…等，於就醫時直接扣除(核准項目詳本會官網主要服務-就醫服務-就醫優惠-下載醫療必須健保不給付醫療項目一覽表，並與醫師確認補助項目)。
 </td>
                 </tr>
                 <tr>
                   <td>輔具補助</td>
-                  <td>本會提供輪椅、助聽器、眼鏡或義眼…等輔具及鑲牙的補助，榮民符合申請資格者，可就近向本會各榮民服務處或榮譽國民之家申請補助。</td>
+                  <td>本會提供輪椅、助聽器、眼鏡或義眼…等輔具及鑲牙的補助，榮民符合申請資格者，可就近向本會各榮民服務處或榮譽國民之家申請補助。</td>
                 </tr>
               </tbody>
             </table>
@@ -768,6 +814,7 @@
        <a href="#" id="backButton_medical_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="care_page2" class="page_study" style="display: none;"> -->
   <div id="care_page2" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -794,29 +841,29 @@
                 <tr>
                   <td>急難救助與慰問</td>
                   <td><ol>
-                    <li>榮民（眷）遇有急難重病或特殊災害時，可向本會或榮民服務處申請急難救助金。另本會於三節依榮民及遺眷生活貧困程度類別優先順序發放慰問金。</li>
-                    <li>為表彰八二三戰役參戰義務官兵及金馬自衛隊之歷史貢獻，八二三臺海保衛戰役及其他經國防部核定關係國家安全重要戰役義務役參戰官兵（含金馬自衛隊）未就養榮民，由榮服處核發三節慰問，春節每人核發慰問金新臺幣 3,000 元，端午節、中秋節每人核發慰問金新臺幣 2,000 元。</li>
+                    <li>榮民（眷）遇有急難重病或特殊災害時，可向本會或榮民服務處申請急難救助金。另本會於三節依榮民及遺眷生活貧困程度類別優先順序發放慰問金。</li>
+                    <li>為表彰八二三戰役參戰義務官兵及金馬自衛隊之歷史貢獻，八二三臺海保衛戰役及其他經國防部核定關係國家安全重要戰役義務役參戰官兵（含金馬自衛隊）未就養榮民，由榮服處核發三節慰問，春節每人核發慰問金新臺幣 3,000 元，端午節、中秋節每人核發慰問金新臺幣 2,000 元。</li>
                   </ol></td></tr>
-                  <tr><td>高中職以下榮民子女就學補助</td>
-                  <td>榮民之 30 歲以下子女，就讀高中職以下學校符合申請資格者，得申請就學補助。113學年度第1學期開始，就讀五專前三年、高中、高職每學期補助6,240元；就讀國中、國小每學期補助 500 元。</td></tr>
-                  <tr><td>大學以上子女就學補助</td>
-                  <td>榮民之 30 歲以下子女，就讀大學及研究所符合申請資格者，得申請就學補助，每學期補助金為公立大學 1 萬元、私立大學 1 萬元。</td></tr>
-                  <tr><td>榮民就學子女午餐補助</td>
-                  <td>榮民或榮民遺眷就讀國中、國小子女，且符合低收入戶、中低收入戶、因家庭突發因素無力支付午餐費或經學校認定清寒無力支付午餐費，並納入午餐補助，或有特殊事由經本會評估核認者等條件者，得申請例假日及寒暑假午餐補助金，每日以 80 元計。</td></tr>
-                  <tr><td>大學以上榮民子女獎學金</td>
-                  <td>符合榮民榮眷基金會獎學金資格之榮民子女，就讀國內大學校院及研究所博、碩士班，核發博、碩士生 1 萬 5,000 元，大學生 1 萬 2,000 元獎學金；就讀國外高中、大學及研究所，符合國外求學菁英圓夢計畫獎學資格者，給予 40~50 萬元一次性獎學補助。</td></tr>
+                  <tr><td>高中職以下榮民子女就學補助</td>
+                  <td>榮民之 30 歲以下子女，就讀高中職以下學校符合申請資格者，得申請就學補助。113學年度第1學期開始，就讀五專前三年、高中、高職每學期補助6,240元；就讀國中、國小每學期補助 500 元。</td></tr>
+                  <tr><td>大學以上子女就學補助</td>
+                  <td>榮民之 30 歲以下子女，就讀大學及研究所符合申請資格者，得申請就學補助，每學期補助金為公立大學 1 萬元、私立大學 1 萬元。</td></tr>
+                  <tr><td>榮民就學子女午餐補助</td>
+                  <td>榮民或榮民遺眷就讀國中、國小子女，且符合低收入戶、中低收入戶、因家庭突發因素無力支付午餐費或經學校認定清寒無力支付午餐費，並納入午餐補助，或有特殊事由經本會評估核認者等條件者，得申請例假日及寒暑假午餐補助金，每日以 80 元計。</td></tr>
+                  <tr><td>大學以上榮民子女獎學金</td>
+                  <td>符合榮民榮眷基金會獎學金資格之榮民子女，就讀國內大學校院及研究所博、碩士班，核發博、碩士生 1 萬 5,000 元，大學生 1 萬 2,000 元獎學金；就讀國外高中、大學及研究所，符合國外求學菁英圓夢計畫獎學資格者，給予 40~50 萬元一次性獎學補助。</td></tr>
                   <tr><td>菁英圓夢計畫</td>
-                  <td>就讀國外大學及研究所，符合榮民榮眷基金會國外求學菁英圓夢計畫獎學金資格者，給予 40~50 萬元一次性獎學補助。</td></tr>
+                  <td>就讀國外大學及研究所，符合榮民榮眷基金會國外求學菁英圓夢計畫獎學金資格者，給予 40~50 萬元一次性獎學補助。</td></tr>
                   <tr><td>重大災害救助</td>
-                  <td>榮民、榮眷或遺眷，遭受重大災害、意外事故，致死亡或重度身心障礙以上者，符合相關條件可申請榮民榮眷基金會「重大災害救助」，惟同一事由不得同時申請本會救助金。救助對象及核發金額新臺幣 3 萬元至 6 萬元。</td></tr>
-                  <tr><td>周祖孝文教基金會獎學金</td>
-                  <td>榮民之子女，就讀國內高中職及大學校院，符合周祖孝文教基金會獎學資格者，核發獎學金：大學生 1 萬元，高中職生 6,000 元。</td>
+                  <td>榮民、榮眷或遺眷，遭受重大災害、意外事故，致死亡或重度身心障礙以上者，符合相關條件可申請榮民榮眷基金會「重大災害救助」，惟同一事由不得同時申請本會救助金。救助對象及核發金額新臺幣 3 萬元至 6 萬元。</td></tr>
+                  <tr><td>周祖孝文教基金會獎學金</td>
+                  <td>榮民之子女，就讀國內高中職及大學校院，符合周祖孝文教基金會獎學資格者，核發獎學金：大學生 1 萬元，高中職生 6,000 元。</td>
                 </tr>
-                <tr><td>法律諮詢服務</td>
-                  <td>榮民(眷)遭遇權益問題，可向各縣市榮民服務處申請法律諮詢服務。</td>
+                <tr><td>法律諮詢服務</td>
+                  <td>榮民(眷)遭遇權益問題，可向各縣市榮民服務處申請法律諮詢服務。</td>
                 </tr>
                 <tr><td>微型保險</td>
-                  <td>榮民具低收、中低收入戶、領取中低收入老人生活津貼或特殊境遇家庭資格，且年齡為 75 歲以下者，由本會協助投保意外傷害事故保險，俾於遭逢非疾病意外事故致身亡或失能時能獲得基本保險保障(最高理賠 30 萬元)。</td>
+                  <td>榮民具低收、中低收入戶、領取中低收入老人生活津貼或特殊境遇家庭資格，且年齡為 75 歲以下者，由本會協助投保意外傷害事故保險，俾於遭逢非疾病意外事故致身亡或失能時能獲得基本保險保障(最高理賠 30 萬元)。</td>
                 </tr>
               </tbody>
             </table>
@@ -824,6 +871,7 @@
        <a href="#" id="backButton_care_page2" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="retire_money_page" class="page_study" style="display: none;"> -->
   <div id="retire_money_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -848,19 +896,19 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>子女教育補助費</td>
+                  <td>子女教育補助費</td>
                   <td>
-                  <o><li>支領退休俸、贍養金或生活補助費中校階(含)以下人員，子女在臺灣地區居住，就讀政府立案之公(私)立大專以下，小學以上學校肄業正式生，得申請子女教育補助費。</li>
+                  <o><li>支領退休俸、贍養金或生活補助費中校階(含)以下人員，子女在臺灣地區居住，就讀政府立案之公(私)立大專以下，小學以上學校肄業正式生，得申請子女教育補助費。</li>
                     <li>各項申請條件、所需文件等詳細資訊，可至輔導會網站下載（網址：
 https://www.vac.gov.tw/cp-3262-106908-1.html）。</li>
                   </ol></td>
                 </tr>
                 <tr>
-                  <td>眷改支遺屬年金或遺屬一次金</td>
+                  <td>眷改支遺屬年金或遺屬一次金</td>
                   <td>
                   <ol>
-                    <li>領俸人亡故，依陸海空軍軍官士官服役條例，遺族得持相關文件前往榮服處辦
-理，由榮服處彙整資料文件轉國防部核定後，可改支領遺屬年金或遺屬一次金。</li>
+                    <li>領俸人亡故，依陸海空軍軍官士官服役條例，遺族得持相關文件前往榮服處辦
+理，由榮服處彙整資料文件轉國防部核定後，可改支領遺屬年金或遺屬一次金。</li>
                     <li>各項申請條件、所需文件等詳細資訊，可至輔導會網站詳閱（網址：
 https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
                     </ol>
@@ -868,11 +916,11 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
                 </tr>
                 <tr>
                   <td>申辦備除役軍人眷屬證</td>
-                  <td><ol><li>申請資格：支領退休俸、贍養金或生活補助費人員，其在臺灣地區設有戶籍之父母、配偶及子女(未成年或就讀大學以下或身心障礙者)。</li><li>各項申請條件、所需文件等詳細資訊，可至輔導會網站下載（網址：https://www.vac.gov.tw/cp-3262-106906-1.html）。</li></ol></td>
+                  <td><ol><li>申請資格：支領退休俸、贍養金或生活補助費人員，其在臺灣地區設有戶籍之父母、配偶及子女(未成年或就讀大學以下或身心障礙者)。</li><li>各項申請條件、所需文件等詳細資訊，可至輔導會網站下載（網址：https://www.vac.gov.tw/cp-3262-106906-1.html）。</li></ol></td>
                 </tr>
                 <tr>
                   <td>水電優待</td>
-                  <td><ol><li>支領退休俸、贍養金或生活補助費官兵本人或其眷屬，得以戶籍地址申辦水電優待(僅限一戶)。</li><li>申請條件、所需文件等資訊，可至輔導會網站詳閱或線上申辦（網址： https://www.vac.gov.tw/cp-3132-59848-1.html）。</li></ol></td>
+                  <td><ol><li>支領退休俸、贍養金或生活補助費官兵本人或其眷屬，得以戶籍地址申辦水電優待(僅限一戶)。</li><li>申請條件、所需文件等資訊，可至輔導會網站詳閱或線上申辦（網址： https://www.vac.gov.tw/cp-3132-59848-1.html）。</li></ol></td>
                 </tr>
               </tbody>
             </table>
@@ -880,6 +928,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_retire_money_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="identity_page" class="page_study" style="display: none;"> -->
   <div id="identity_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -952,6 +1001,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_identity_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="funeral_page" class="page_study" style="display: none;"> -->
   <div id="funeral_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1013,6 +1063,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_funeral_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="crucial_page" class="page_study" style="display: none;"> -->
 <div id="crucial_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1064,6 +1115,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_crucial_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="imergency_page" class="page_study" style="display: none;"> -->
   <div id="imergency_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1115,6 +1167,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_imergency_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="season_page" class="page_study" style="display: none;"> -->
   <div id="season_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1162,6 +1215,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_season_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="severe_nature_page" class="page_study" style="display: none;"> -->
   <div id="severe_nature_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1208,6 +1262,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_severe_nature_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="funeral_care_page" class="page_study" style="display: none;"> -->
   <div id="funeral_care_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1257,6 +1312,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_funeral_care_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="school_page" class="page_study" style="display: none;"> -->
   <div id="school_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1298,6 +1354,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_school_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="school_award_page" class="page_study" style="display: none;"> -->
   <div id="school_award_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1340,6 +1397,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_school_award_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="elite_page" class="page_study" style="display: none;"> -->
   <div id="elite_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1377,6 +1435,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_elite_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="lunch_page" class="page_study" style="display: none;"> -->
   <div id="lunch_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1420,6 +1479,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_lunch_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="temple_page" class="page_study" style="display: none;"> -->
   <div id="temple_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1455,6 +1515,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_temple_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="dependent_law_page" class="page_study" style="display: none;"> -->
   <div id="dependent_law_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1490,6 +1551,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_dependent_law_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="dependent_foundation_page" class="page_study" style="display: none;"> -->
   <div id="dependent_foundation_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1525,6 +1587,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_dependent_foundation_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="medical_care_page" class="page_study" style="display: none;"> -->
   <div id="medical_care_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1583,6 +1646,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_medical_care_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="dependent_medical_page" class="page_study" style="display: none;"> -->
   <div id="dependent_medical_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1627,7 +1691,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
                   <td>健保 6 類 1 目之榮民遺眷家戶代表，於榮總住院之 2 人病房差額費，由本會補助。</td>
                 </tr>
                 <tr>
-                  <td>醫療必須但健保不給付項目費用補助</td>
+                  <td>醫療必須但健保不給付項目費用補助</td>
                   <td>健保 6 類 1 目之榮民遺眷家戶代表，至本會所屬醫療機構就醫，經醫師評估為治療必須使用之藥衛材、手術、檢驗、治療、麻醉…等，於就醫時直接扣除(核准項目詳本會官網-主要服務-就醫服務-就醫優惠-下載醫療必須健保不給付醫療項目一覽表，並與醫師確認補助項目)。
 </td>
                 </tr>
@@ -1637,6 +1701,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_dependent_medical_page" class="back-button">返回</a>
       </div>
 
+<!-- 🔹頁面區塊開始：<div id="dependent_work_train_page" class="page_study" style="display: none;"> -->
   <div id="dependent_work_train_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
@@ -1689,6 +1754,7 @@ https://www.vac.gov.tw/cp-3262-106909-1.html）。</li>
        <a href="#" id="backButton_dependent_work_train_page" class="back-button">返回</a>
       </div>
   
+<!-- 🔹頁面區塊開始：<div id="dependent_other_page" class="page_study" style="display: none;"> -->
   <div id="dependent_other_page" class="page_study" style="display: none;">
 <!--         <div class="container_affair_homepage"> -->
           <!-- 頁首圖片 -->
